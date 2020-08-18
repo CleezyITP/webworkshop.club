@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Day 2 Activity</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<a href="../index.html">Lesson 2 Home</a>
+
+<h1>Multipage Sites</h1>
+
+<p>When creating more than one page on your website, relative URLs can be used to link to pages within your own website. Relative URLs provide a shorthand way of telling the browser where to
+find your files.</p>
+
+<h2>Same Folder</h2>
+<p>If all of the files in your site are in one folder, you simply use the
+file name for that page.</p>
+
+
+<p> For example, to link to a contact page from the homepage (index.html)the html is:
+<pre>&lt;a href="contact.html">Contact&lt;/a>&lt;/p></pre>
+
+<h2>Different folder</h2>
+
+<p>If your site is organized into separate folders (or directories), you need to tell the browser a bit of extra information about how to get from the page it is currently on to the page that you are linking to.</p>
+
+<h3>Child Folder</h3>
+
+<p>A child folder, is a sub folder of the main directory. To access a file from child folder, use the name of the child folder, followed by a forward slash, then the file name.</p>
+
+<p>On a website about the Andrew Heiskel Library there may be a number of different folders representing different events/services the library provides. Imagine in each folder, there is a file about service information, main contacts, and events. To link to a page about the reading group from the main library page, we need to access a file that is in a folder called reading group from the homepage (main or root index.html) the html link we wound add to our home page would be: <pre>&lt;a href="reading_group/info.html">Reading Group Information&lt;/a></p></pre>
+
+<h3>Parent Folder</h3>
+
+<p>A parent folder, a level above a child folder. To access a file in the parent folder, use ../ to indicate the folder above the current one, then follow it with the file name.</p>
+
+<p>For example, to link to the homepage of the library (index.html) from the Reading Group page the html is: <pre>&lt;a href="../index.html"> Andrew Heiskell Library Home&lt;/a></pre>
+
+
+<p>Let's try and create a multipage site: <a href="activity2.html">HTML Part 2: Activity 1</a>
+
+</body>
+</html>

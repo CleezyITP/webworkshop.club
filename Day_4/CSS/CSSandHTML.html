@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Introduction to CSS: Incorporate selectors</title>
+    <link rel="stylesheet" href="../../styles.css">
+
+</head>
+
+<body>
+    <a href="../index.html">Day 4 Home</a>
+
+
+    <h1>Incorporate CSS into Your HTML</h1>
+
+    <p>
+        Once you've added a link to an extrernal stylesheet, there are a couple ways to incoprorate your styles into your HTML.
+    </p>
+    <ul>
+        <li>Element selectors : any HTML element you have created a rule for will be applied to the HTML elements autoatically</li>
+        <li>class selectors : class selectors you have defined in your CSS file can be referred to in your HTML with the <em>class</em> attribute. If you have a class selector defined as
+            <pre>.myBigClass { 
+    font-size:72px;
+}</pre>you would call it in your code as
+            <pre>&lt;p class="myBigClass"></pre>
+        </li>
+        <li>I D selectors : an I D selector is called once. I D selectors you have defined in your CSS file can be referred to in your HTML with the <em>id</em> attribute. If you have a I D selector defined as
+            <pre>#banana { 
+    background-color:yellow;
+}
+        </pre>you would call it in your code as
+            <pre>&lt;div id="banana"></pre> </li>
+    </ul>
+</body>
+
+
+</html>

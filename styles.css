@@ -1,0 +1,81 @@
+body{
+	font-family: myFont;				
+  margin: 40px 40px 40px 40px;
+    
+
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: myFontBold;
+  src: url(Open_Sans/OpenSans-Bold.ttf);
+
+}
+
+h1{
+	font-family: myFontBold; 
+  font-size:3.5em; 
+  text-align: center;
+	
+}
+
+h2, h3{
+  font-family: myFontBold;
+
+}
+
+
+.toc{
+  display:inline;
+  }
+
+
+.site-nav {
+  background: LightSkyBlue;
+  text-align: center;
+
+}
+  
+  .site-nav ul {
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ .site-nav li {
+   border-left: 2px solid LightCyan;
+    border-right: 2px solid LightCyan;
+    border-top: 2px solid LightCyan;
+    border-bottom: 2px solid LightCyan;
+    flex-grow: 2;
+    display: block;
+    position: relative;
+    padding: 10px;
+   font-size: 25px;
+    
+    
+  }
+  
+  .site-nav a {
+  color: black;
+  text-decoration: none;
+  
+  }
+
+  .site-nav li:hover{
+  text-decoration: underline ;
+ }
+  .site-nav li:active{
+  background-color: LightCyan;
+}
+
+a {
+  color: black;
+  
+  }

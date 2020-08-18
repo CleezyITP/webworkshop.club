@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>new elements</title>
+	<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+	<a href="../index.html">HTML Home</a>
+	<h1>Class and IDs + New and Semantic HTML Elements</h1>
+<h2>Class and IDs</h2>
+<ul>	
+<li><strong>More important attributes!</strong></li>
+		<ul>
+			<li><strong>id</strong> - Every HTML element can carry the id attribute. It is used to <em>uniquely identify</em> that element from other elements on the page. Its value should start with a letter or an underscore (not a number or any other character). It is important that no two elements on the same page have the same value for their id attributes (otherwise the value is no longer unique).
+			<p>As an example of how we can use ID's, they can be used to link to a section on the same page. In order to link to a part of the same page, you can add an ID attribute to the element you want to reference (for example, &lt;h1 id="top"&gt;), and in your anchor element, the value of the href attribute will be "#top" (&lt;a href="#top"&gt;skip to top&lt;/a&gt;). More complete code is as follows:</p>
+
+			<p>
+				<p>&lt;h1 id="top"&gt; Title of My Site &lt;/h1&gt;</p>
+				<p>&lt;p&gt; a long passage of text, or many elements &lt;/p&gt;</p>
+
+			&lt;a href="#top"&gt; jump to beginning &lt;/a&gt;	
+			</p>
+
+
+			</li>
+			
+			<li><strong>class</strong> - Every HTML element can also carry a class attribute. Sometimes, rather than uniquely identifying one element within a document, you will want a way to identify several elements as being different from the other elements on the page. For example, you might have some paragraphs of text that contain information that is more important than others and want to distinguish these elements, or you might want to differentiate between links that point to other pages on your own site and links that point to external sites. To do this you can use the class attribute. Its value should describe the class it belongs to.
+
+			<p>In the following example, key paragraphs have a class attribute whose value is important:</p>
+
+				<p>
+					&lt;p class="important"&gt; some important text, blah, blah, blah. &lt;/p&gt;</p>
+				<p>&lt;p&gt; some less important text text, blah, blah, blah. &lt;/p&gt;</p>
+				<p>&lt;p class="important"&gt; some more important text, blah, blah, blah. &lt;/p&gt;</p>
+	
+			</li>
+</ul>
+
+<h2>News Elements and Semantic HTML</h2>
+<ul>
+	<li><strong> Divs</strong> - dividers or divs. The div element allows you to group a set of elements together in one block-level box. For example, you might create a div element to contain all of the elements for the header of your site (the logo and the navigation), or you might create a div element to contain comments from visitors. In a browser, the contents of the div element will start on a new line, but other than this it will make no difference to the presentation of the page. Here's how you construct a div: &lt;div&gt; Some content &lt;div&gt;. Divs are essential to grouping content that we can act on with CSS or Javascript.</li>
+
+	<li><strong>Images</strong> - in order to include images on your website, you need to create an img element, which is a self closing element (no closing tag necessary). Images contain two very important attributes:</li>
+		<ul>
+			<li><strong>src</strong>-Like a link requires an href, your image element has to reference a photo that is a file in your website folder, or associated with a url. Here are two examples of how to construct images:<br/></li>
+			<ol>
+				<li>&lt;img src="cat.jpg"&gt;</li>
+				<li>&lt;img src="https://boredpanda.com/before-after-cats-growing-up.jpg"&gt;</li>
+			</ol>
+		
+			<li><strong>alt</strong> - in for screen readers to be able to detect/describe an image, alt attributes are also required in the img tag. To build on the last example:</li>
+			<ol>
+				<li>&lt;img src="cat.jpg" alt="black cat with green eyes" &gt;</li>
+				<li>&lt;img src="https://boredpanda.com/before-after-cats-growing-up.jpg" alt="long haired black cat as a kitten on the left, to the right the same cat fully grown"&gt;</li>
+			</ol>
+		</ul>
+	
+	<li><strong>Semantic HTML</strong> - in addition to &lt;em&gt; and &lt;strong&gt; tags we can give our html meaning by nesting basic elements in semantic elements. The following are just a couple examples: </li>
+		<ul>
+			<li><strong>Nav</strong> - The &lt;nav&gt; element defines a set of navigation links. When creating multipage sites, the nav region defines all the important links for moving around the site. The nav element is also important for accessibility</li>
+			<li><strong>Footer</strong> - The &lt;footer&gt; usually goes at the bottom of a page, and contains seconday navigation link items on a site.</li>
+			<li><strong><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">More Semantic HTML if you are interested!</a></strong></li>
+		</ul>
+</li>	
+
+<p><a href="activity3.html">Part 3 Activity</a></p>
+</body>
+</html>
