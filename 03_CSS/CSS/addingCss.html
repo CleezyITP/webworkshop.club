@@ -1,0 +1,51 @@
+<html lang='en'>
+
+<head>
+    <title>Adding CSS</title>
+<link rel="stylesheet" href="../../styles.css">
+
+</head>
+
+<body>
+<a href="../index.html">CSS Home</a>
+
+
+<h1> Adding CSS to Your Page</h1>
+
+
+<p> There are different ways you can incorporate CSS into your website. You can link to an external CSS file, you can write CSS directly  in the <em>head</em> of your page by using style tags, or you can write CSS as an attribute of an element. We will focus on creating our CSS in a separate CSS file (the best option for multi-page sites)</p>
+
+<p> To link to a separate css file you fould first create a new file and save it win your website folder. You will need to save this file as a .css filetype. For example, "style.css". </p>
+
+<p> Then, in your HTML, include a link to this file in between your &lt;head> tags. If the css file is in the same folder as your index page, the link should be written as follows: &lt;link href="style.css" type="text/css" rel="stylesheet"></p>
+
+
+<p> Let's break down the attributes in this new link element used to incorporate style in our sites: </p>
+
+<ol>
+
+<li>href - specifies the path to the CSS file. </li>
+<li>type - specifies the type of document being linked to. The value should be text/css.</li>
+<li>rel - specifies the relationship between the HTML page and the file it is linked to. The value should be stylesheet when linking to a CSS file.</li>
+
+</ol>
+
+<p> in HTML:
+<pre>&lt;html>
+&lt;head>
+&lt;title>Introduction to CSS
+&lt;/title>
+&lt;link href="style.css" type="text/css" rel="stylesheet" />
+&lt;/head>
+&lt;body>
+&lt;/body>
+&lt;/html>
+</pre>
+</p>
+
+    
+<a href="selectors.html">Next: CSS Selectors</a>
+</body>
+
+
+</html>
