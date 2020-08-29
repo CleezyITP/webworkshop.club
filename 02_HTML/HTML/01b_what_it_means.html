@@ -11,16 +11,44 @@
 
  <h1>What does it mean?</h1>
 
-    <p>The content on the previous page is a simple webpage using Hypertext Markup Language (HTML). 
-    <p>The elements inside the less-than and greater-than symbols are HTML tags. In this page, you can see the <em>html</em>, <em>head</em>, <em>title</em>, <em>body</em>, and <em>p</em> tags. Let's address these individually.</p>
+    <p>The content on the previous page is a simple webpage using Hypertext Markup Language (HTML). Let's breakdown what it means.</p>
+    <h2>The HTML</h2>
+    <p>The elements inside the less-than and greater-than symbols are HTML tags. In this example, we have <em>DOCTYPE</em>, <em>html</em>, <em>head</em>, <em>meta</em>, <em>title</em>, <em>body</em>, <em>h1</em>, and <em>p</em> tags. Let's address these individually.</p>
     
-    <ul>
-        <li><strong>html</strong> - This element goes at the beginning of every HTML page. It is closed with /html when you're finished with the file</li>
-        <li><strong>head</strong> - This part of the file will contain information like the site's title, and any additional files you want to use, like CSS or javascript.</li> 
-         <li><strong>title</strong> - This is the title of your webpage. The title tag, and it's closing tag, are between the head and the /head tags. Your screen reader will read the title of a page when it loads, but it is not displayed on the screen.</li>
-         <li><strong>body</strong> - The body contains the content you will read off the screen. It is where you will put the majority of your content, text, audio, video, images, links, and so on. </li>
-        <li><strong>p</strong> - This is a paragraph tag. Text will go between the two p tags (opening and closing) and will be displayed in the main browser window.</li>
-    </ul>
+<ul>
+    <li>
+        <strong>DOCTYPE</strong> - Although most HTML will work without this tag, it is best practice to incorporate an HTML declaration at the start of your HTML file. This alerts the browser about what document type to expect, and prevents certain errors.
+    </li>
+            <li>
+                <strong>html</strong> - An HTML opening tag goes at the beginning of every HTML page, and is closed (with /html) when you're finished with the file.
+            </li>
+     <li>
+        <strong>head</strong> - As mentioned previouly, it&apos;s useful to think
+        of HTML as the bones of your site. Just like you, HTML contains a head and a
+        body. This part of the file will contain information like the site's title, meta data,
+        and any additional files you want to use, like CSS or javascript. In our example, we have included a title and meta tag with UTF character encoding. Note that the meta tag is not always necessary, but another best practice.
+    </li>
+
+    <li>
+        <strong>title</strong> - This is the title of your webpage. The title tag, and it's closing tag, are between the head and the /head tags. Your screen reader will read the title of a page when it loads, but it is not displayed on the screen.
+    </li>
+    <li>
+        <strong>body</strong> - The body contains the content you will read off the screen. It is where you will put the majority of your content, text, audio, video, images, links, and so on. 
+    </li>
+    <li>
+        <strong>h1</strong> - This is a heading level 1 element. Text will go between opening and closing h1 tags, and like the title, this text should describe the general content of your page.
+    </li>
+            <li>
+                <strong>p</strong> - This is a paragraph tag. Text will go between the two p tags (opening and closing) and will be displayed in the main browser window.
+            </li>
+</ul>
+
+
+<h2>Nesting of Elements</h2>
+<p>An important and sometimes tricky concept to consider in HTML and other programming languages is nesting of elements. It is helpful to think of our html as a sandwich made up of smaller sandwiches, a branching tree structure, or a complex nested list. In the example we have just walked through, our html opening and closing tags have all of our other elements nested inside. The more complex HTML we add, the more likely we are to have more branches on our tree, deeper nesting of our list, and more sandwiches inside of sandwiches in our larger sandwich. The &lt;html> element (html opening &lt;html> and closing &lt;/html> tags) is the parent to the head and body elements, and they are its children. The head and body are siblngs. All of the elements in our head and body tags are children of those elements, and descendants of our HTML. These parent-child-sibling-descendant relationships are important to understand inheretance and can be used when troubleshooting bugs in our code, applying style and interaction.</p>
+
+<h2>Formatting Convention: Line breaks and tab indentation</h2>
+<p>The example that we have just walked through uses line breaks and tab indentation to communicate nested relationships in HTML. The convention is that each new nested element is added one tab indentation from its parent element. The &lt;html> tags are all the way to the left, head and body tags are one tab indentation in, their child elements are one more tab indentation in, and so forth. Although your HTML will still run if you place all elements on one line using this formatting convention helps to stay organized and collaborate with sighted programmers.</p>
 
     <a href="01_example.html">This how the page is actually rendered</a></p>
 
