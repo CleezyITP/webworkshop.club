@@ -145,12 +145,22 @@
 
 <li><h3>Audio</h3></li>
 <pre>
-Defines sound content
+
+<audio controls>
+  <source src="coolTrack.wav" type="audio/wav">
+  <source src="coolTrack.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
 &lt;audio controls>
-  &lt;source src="horse.ogg" type="audio/ogg">
-  &lt;source src="horse.mp3" type="audio/mpeg">
+  &lt;source src="coolTrack.wav" type="audio/wav">
+  &lt;source src="coolTrack.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
 &lt;/audio>
 </pre>
+
+<p>Note: The controls attribute adds audio controls, like play, pause, and volume.The &lt;source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. The text between the &lt;audio> and &lt;/audio> tags will only be displayed in browsers that do not support the &lt;audio> element.</p>
 
 </ol>
 
@@ -318,6 +328,7 @@ Defines sound content
   </pre
       >
     </ol>
+
 
 
 <br>

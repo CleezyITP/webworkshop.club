@@ -7,8 +7,12 @@
 <body>
 <a href="../index.html">HTML Home</a>
 <h1>Link with an accessible label</h1>
-<p>Links should make sense out of context. Phrases such as &quot;click here,&quot; &quot;read more,&quot; and so on are ambiguous when read out of context. In some situations, designers may choose to lessen the visual appearance of links on a page by using shorter, repeated link text such as &quot;read more&quot;. These situations provide a good use case for aria-label in that the simpler, non-descriptive &quot;read more&quot; text on the page can be replaced with a more descriptive label of the link. The words &apos;read more&apos; are repeated in the aria-label (which replaces the original anchor text of [Read more...]) to allow consistent communication between users.
+<p>Links should make sense out of context. Phrases such as &quot;click here,&quot; &quot;read more,&quot; and so on are ambiguous when read out of context, and do not convey the purpose of destination of a link. In some situations, designers may choose to lessen the visual appearance of links on a page by using shorter, repeated link text such as &quot;read more&quot;. It is best practice to create link text that conveys the links purpose, however, developers and designers often choose to limit the amount of text on a page, in particular when there is sufficient contextual information about an element, it is redundant, or repeating information.</p>
+
+
+<p>These situations provide a good use case for aria-label in that the simpler, non-descriptive &quot;read more&quot; text on the page can be replaced with a more descriptive label of the link when read out of context. The words &apos;read more&apos; are repeated in the aria-label (which replaces the original anchor text of [Read more...]) to allow consistent communication between users.
 </p>
+
 
 <a href="gotcha2.html" aria-label="Read more about the gotcha page">[Read more...]</a>
     
@@ -17,7 +21,12 @@
 	    			&lt;a href=&quot;gotcha.html&quot; aria-label=&quot;Read more about the gotcha page&quot;>[Read more...]&lt;/a>		        		
 				</code>
 	<br>
-    <br>
+<p>In this example, the ARIA label overwrites the link text for screen reader users. This information is not visually rendered to the page (on hover or otherwise).</p>
+
+
+<p> Accessible Rich Internet Applications (ARIA) is used to provide developers with the option to add additional semantic information to Web pages. It can be helpful when creating custom components (adds state and property information), communicating dynamic page changes (ARIA alerts will be used in our Javascript section), and in the case of this link example, to add more descriptive information to an element (link purpose). In this case, ARIA labels can provide descriptive information about an element without taking up a lot of space (this can also be achieved by using the aria-labelledby attribute).
+</p>
+
 <p><strong>A note about keyboard accessibility:</strong> The most common source of keyboard inoperable links is when a developer decides to create custom elements and components (like a dynamic menu) by using JavaScript event handlers that do not permit keyboard access (eg on mouse over, or on hover). Links like this often have a pound sign as the link destination, which means that the link destination is the same page; clicking on the link accomplishes nothing.
 </p>
 <p> We will use links or anchor tags shortly. But first, let&apos;s learn a bit about how links can be used to create multipage sites.</p>
