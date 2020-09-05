@@ -2,3 +2,4 @@
 
 This introductory web-development course is for students that are blind and use screen reader technology. 
 
+[webworkshop.club](http://webworkshop.club/index.html)
