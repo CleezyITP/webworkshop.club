@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git and Github Pages Using JAWS</title>
+	<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<a href="Resources.html">Resources Home</a>
+<h1>Git and Github Pages Using JAWS</h1>
+<p>JAWS documentation by Kestrel Verlager and page by Keita Ohshiro. Please email claire(dot)kv(at)nyu(dot)edu, if you have any feedback on this document!</p>
+
+<h2>Definitions</h2>
+<ul>
+	<li>Git: Works via command line/terminal, and is an example of a Distributed Version Control System (DVCS), provides a method to create a shareable working copy of code and also contains the full history of changes to that code.</li>
+	<li>Github: provides <a href="https://en.wikipedia.org/wiki/Internet_hosting_service">hosting</a> for <a href="https://en.wikipedia.org/wiki/Software_development">software development</a> and <a href="https://en.wikipedia.org/wiki/Version_control">version control</a> through a website interface (not the friendliest site to navigate)</li>
+	<li>Github Pages: GitHub Pages is <a href="https://en.wikipedia.org/wiki/Web_hosting_service">a static web hosting service</a> offered by GitHub and these pages must be initialized through the Github interface. After that however, it is easiest to add to and change them via the command line. </li>
+	<li>Command line: The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run. </li>
+</ul>
+
+<h2>Git Set up</h2>
+<ul>
+	<li>Check if you have Git Installed through the Command Line</li>
+		<ol>
+					<li>Press the Windows key.</li>
+					<li>Type "command prompt" (without the quotes) in the search box. Usually, Windows will auto-complete "command prompt app" before you have typed very many letters.</li>
+					<li>Press enter.</li>
+					<li>The cursor is now sitting on the command line. If you press Jaws key+t, you will hear "Command prompt."</li>
+					<li>On the Command Line,  type “git --version”. If Git is installed, the command line will produce a message showing your Git version like “git version 2.24.1”. Otherwise, Git is not installed.</li>
+					<li>To close the command prompt app and its window, type "exit" (without the quotes).</li>
+		</ol>
+	<li>If you do not have git (per the last few steps), Install Git (on a Windows machine)</li>
+		<ol>
+			<li>Go to <a href="https://gitforwindows.org/">gitforwindows.org</a> and download the Git for Windows installer.</li>
+			<li>Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.</li>
+			<li>To verify Git was installed, follow steps 1-6 above</li>
+		</ol>
+</ul>
+
+<h2>Github Website Steps</h2>
+<p>Go to <a href="https://github.com">github.com</a>. Once the webpage is loaded, the first three items at the top of the page, as read by Jaws, are:
+	<q>The page title: "The world’s leading software development platform · GitHub"
+		Skip to content [link]
+		Homepage [link]
+	</q>
+</p>
+
+<p>There are at least four quick ways to navigate to the sign up button:</p>
+<ul>
+	<li>Use the "Skip to content" link (note: this doesn't always seem to work). </li>
+	<li>Use the Jaws key+F7 links list and then press the s key until you hear "Sign up" (it should be announced after the second press of the "s" key, right after "Sign in").</li>
+	<li>Press the quick nav key "e" to go directly to the first edit field in the sign up form, which asks for your username (If you don't know what Quick Nav keys are, go here: <a href="https://www.freedomscientific.com/SurfsUp/Quick_Keys.htm">freedomscientific.com/SurfsUp/Quick_Keys.htm</a>) </li>
+	<li>Use the Windows Control+f keyboard shortcut and search for "sign". This will bring you to two links: Sign in and Sign up.</li>
+</ul>
+
+<p>If you click this Sign Up button, you will be popped right into the first edit field of a sign up form on a different page which is titled "Join GitHub." However, there is also a sign up form in the main region of this page. You can get to it by pressing either of two different quick nav keys, "q" to go to the main region of the page, or "h" to go to the first heading on the page. If you use the q key, you will hear Jaws say "Main region." If you use the h key, you will hear "Built for Developers (heading 1)." Whichever you choose, this will be the same line on the page. Using these quick nav keys are the fastest and easiest way to navigate the GitHub website.</p>
+
+<p>Note about usernames: Think carefully about what you want as your username, as this will be one of the common ways that you are identified by others on GitHub, and it will also be used as part of the address for the URL which is associated with your GitHub account.</p>
+
+<p>Complete the sign up form. This includes having to solve an audio captcha, but you can press the Control key to have the audio clip repeat.</p>
+
+<p>If everything works, you will find a message that you need to verify your account from an email that has been sent to you. If you don't seem to have moved off the page with the form, check that there were no issues with using a username that has already been taken, or an email address that is already associated with another account. For more detailed information about your GitHub account, refer to <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account">Setting up and managing your GitHub account</a>.</p>
+
+<p>As soon as you have created your GitHub account, you will be asked if you want to take the GitHub "Hello World" tutorial, skip this step.</p>
+
+<h2>Creating a Github Page</h2>
+<ol>
+	<li>Use profile page as home page for orientation (eg. https://github.com/username)</li>
+	<li>In the main region, locate the “Create new” button. You can get to Create new button by either skipping to Main, then Q to main, and then arrow up twice to get to create new, or with quick nav turned on, “B” and “create new” is the first button on screen.</li>
+	<li>Select the button to expand the button menu and then select “new repository”</li>
+	<li>You are now on a page with the title "Create a New Repository."</li>
+	<li>Use the "Skip to content" link or press the quick nav q key to go to the main region of the page.</li>
+	<li>You can also press the quick nav h key to go to the heading of the page, which says "Heading 1 Create a new repository."</li>
+	<li>Next comes a list which is where you will fill out the information for your new repository (note: this means that, next time you visit this page, you can press the quick nav l key to jump right to this list). The first item in this list is a drop-down menu which allows you to designate the owner. By default, your account is filled in. You will hear: Owner: @Your username [button collapsed menu]. The next line only contains a slash symbol, and the line after that requests a name for the repository, followed by an edit field.</li>
+	<li>By typing into this edit field, name your repo username.github.io, where username is your username (or organization name) on GitHub. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</li>
+	<li>You can skip the rest of the items and select “create repository”.</li>
+	<li>Now switch over to the Command line interface. </li>
+	<li>Go to the folder where you want to store your project. For example, when you want to store your project on your Desktop, type the following into the command line. (Note: You can confirm which directory you are in because the command prompt is the name of your current directory.)
+		<ul>
+			<li><code>cd Desktop</code></li>
+		</ul>
+	</li>
+	<li>Clone the new repository you just created. Replacing the words username with your real username, type the following commands on the command line:
+		<ul>
+			<li><code>git clone https://github.com/username/username.github.io</code></li>
+		</ul>
+	After completing this step, Jaws says: Warning: you seem to have cloned an empty repository--ignore this message.
+	</li>
+	<li>Enter the project folder and add an index.html file:
+		<ul>
+			<li><code>cd username.github.io</code></li>
+			<li><code>echo "Hello World" > index.html</code></li>
+		</ul>
+	</li>
+	<li>Add, commit, and push your changes:
+		<ul>
+			<li>git add --all</li>
+			<li>git commit -m "Initial commit"
+				<ul>
+					<li>Note: If this commit step works, you will hear Jaws say something like　[master (root-commit)] initial commit, 1 file changed</li>
+				</ul>
+			</li>
+			<li>git push -u origin master
+				<ul>
+					<li>Below is an example of a confirmation that your git push has completed successfully. Note: This process may differ depending on the environment, etc, but after making an initial commit, the following status message presents percentages (100%) and "done" messages.</li>
+					<li>
+						<code>
+						username@10-18-234-241 test % git push origin master
+						Enumerating objects: 5, done.
+						Counting objects: 100% (5/5), done.
+						Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+						Total 3 (delta 0), reused 0 (delta 0)
+						To https://github.com/reponame/test.git
+						3ffdd46..5af3c80  master -> master
+						</code>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>To close the command prompt app and its window, type "exit" (without the quotes).</li>
+</ol>
+
+<h2>Reference</h2>
+<ol>
+	<li><a href="https://pages.github.com/">GitHub Pages</a> which is what webpages are called on GitHub.</li>
+	<li>Warning: GitHub Pages sites are publicly available on the internet, even if their repositories are private or internal. If you have sensitive data in your site's repository, you may want to remove it before publishing. For more information, see <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility">About repository visibility</a></li>
+	<li><a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">Creating a GitHub Pages Site</a></li>
+	<li><a href="https://docs.github.com/en/github/working-with-github-pages">Working with GitHub Pages</a></li>
+	<li><a href="https://lab.github.com/githubtraining/github-pages">GitHub Pages on GitHub Learning Lab</a>: A free short seven-step online course for learning how to create and configure your own webpage</li>
+	<li><a href="https://www.git-tower.com/learn/git/ebook">Learn Version Control with Git</a>: A free ebook for learning Git on the Tower website</li>
+	<li><a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account">Setting up and managing your GitHub account</a></li>
+	<li><a href="https://docs.github.com/en/github/getting-started-with-github/github-glossary">GitHub Glossary</a>: GitHub has created some of its unique terminology, so this glossary that defines those terms is very useful.</li>
+	<li><a href="https://lab.github.com/githubtraining/introduction-to-github">Introduction to GitHub</a>: Learning Lab course I took a different one of these Learning Lab courses and found it to be very manageable: you begin it online but the bot sends individual lessons to you through email.</li>
+	<li><a href="https://docs.github.com/en/github/searching-for-information-on-github">Searching for information on GitHub</a></li>
+	<li><a href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a></li>
+	<li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories">Creating, Cloning, and Archiving Repositories</a> (This help doc provides much more detail than the Quick Start or Hello World tutorial)</li>
+	<li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository">Creating a New Repository</a></li>
+	<li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes">About readme files</a></li>
+	<li><a href="https://docs.github.com/en/github/writing-on-github">Writing and formatting on GitHub</a></li>
+	<li><a href="https://guides.github.com/features/pages/">Getting Started with GitHub Pages</a></li>
+	<li><a href="https://docs.github.com/en/github/working-with-github-pages#table-of-contents">Table of Contents</a></li>
+	<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Markdown</a> is a lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.</li>
+</ol>
+
+</body>
+</html>

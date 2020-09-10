@@ -19,11 +19,12 @@
         <ul>
             <li>HTML pages are text documents.</li>
             <li>HTML uses tags (characters that sit inside less than and greater than symbols) to give the information they surround special meaning.</li>
-            <li>Tags are often referred to as elements.</li>
-            <li>Tags usually come in pairs. The opening tag (< some element >) denotes the start of a piece of content; the closing tag (< / some element >) denotes the end.</li>
-            <li>To learn HTML you need to know what tags are available for you to use, what they do, and where they can go.</li>
-            <li>HTML elements are used to describe the structure of the page (e.g. headings, subheadings, paragraphs).
+             <li>HTML elements are used to add content and describe the structure of the page (e.g. headings, subheadings, paragraphs).
             <li>They also provide semantic information (emphasis, strong importance) </li>
+            <li>Tags usually come in pairs. The opening tag (< some element >) denotes the start of a piece of content; the closing tag (< / some element >) denotes the end.</li>
+            <li> Some elements are self-closing, and only require an opening tag (eg images and line breaks)</li>
+            <li>Complete tags (opening and closing or self-closing) are referred to as elements.</li>
+           
         </ul>
  
  <h2>Basic Elements</h2> 
@@ -37,11 +38,19 @@
         <li><strong>head</strong> - This part of the file will contain information like the site's title, and any additional files you want to use, like CSS or javascript.</li> 
          <li><strong>title</strong> - This is the title of your webpage. The title tag, and it's closing tag, are between the head and the /head tags. Your screen reader will read the title of a page when it loads, but it is not displayed on the screen. The contents of the title element are either shown in the top of the browser, above where you usually type in the URL of the page you want to visit, or on the tab for that page (if your browser uses tabs to allow you to view multiple pages at the same time).</li>
          <li><strong>body</strong> - The body contains the content you will read off the screen. It is where you will put the majority of your content, text, audio, video, images, links, and so on. Everything inside this element is shown inside the main browser window.</li>
-        <li><strong>p</strong> - This is a paragraph tag. Text will go between the two p tags (opening and closing) and will be displayed in the main browser window.By default, a browser will show each paragraph on a new line with some space between it and any subsequent paragraphs.</li>
-       
 
     </ul>
-
+<h3>Basic Elements Shell</h3>
+<pre>
+ &lt;!DOCTYPE html>
+ &lt;html>
+  &lt;head>
+    &lt;title>  &lt;title>
+  &lt;/head>
+  &lt;body>
+  &lt;/body>
+ &lt;/html>
+</pre>
 
 
     <a href="03_new_elements.html">Next: Review of other useful element types!</a>
