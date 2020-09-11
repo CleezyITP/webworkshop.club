@@ -49,7 +49,7 @@ h2, h3{
   }
   
  .site-nav li {
-   border-left: 2px solid LightCyan;
+    border-left: 2px solid LightCyan;
     border-right: 2px solid LightCyan;
     border-top: 2px solid LightCyan;
     border-bottom: 2px solid LightCyan;

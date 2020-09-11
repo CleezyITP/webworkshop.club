@@ -12,32 +12,35 @@
 
 		<li><strong>Images</strong> - in order to include images on your website, you need to create an img element, which is a self closing element (no closing tag necessary). Images contain two very important attributes:</li>
 		<ul>
-			<li><strong>src</strong>-Like a link requires an href, your image element has to reference a photo that is a file in your website folder, or associated with a url. Here are two examples of how to construct images:<br/></li>
+			<li><strong>src</strong>: Like a link requires an href, your image element has to reference a photo that is a file in your website folder, or associated with a url. Here are two examples of how to construct images:<br/></li>
 			<ol>
 				<li>&lt;img src="cat.jpg"&gt;</li>
 				<li>&lt;img src="https://boredpanda.com/before-after-cats-growing-up.jpg"&gt;</li>
 			</ol>
+			<br>
 		
-			<li><strong>alt</strong> - in for screen readers to be able to detect/describe an image, alt attributes are also required in the img tag. To build on the last example:</li>
+			<li><strong>alt</strong>: The alt attribute is also required on all img elements. Altertnative text can be useful info for web searches, to render something to the screen if a page is slow loading, and to provide screen readers useful information about an image. To build on the last example:</li>
 			<ol>
 				<li>&lt;img src="cat.jpg" alt="black cat with green eyes" &gt;</li>
 				<li>&lt;img src="https://boredpanda.com/before-after-cats-growing-up.jpg" alt="long haired black cat as a kitten on the left, to the right the same cat fully grown"&gt;</li>
 			</ol>
-			<li><strong>height and width</strong> - To control image size, you can set the size of the element using width and height attributes. 
+
+			<p><strong>Note:</strong> if an image is purely decorative, the attribute should have a null value, and this will cause screen readers to skip the element.</p>
+			<li><strong>height and width</strong>: To control image size, you can set the size of the element using width and height attributes. 
 
 				<ol>
 				<li>&lt;img src="cat.jpg" alt="black cat with green eyes" width="500" height="600" &gt;</li>
 				
 			</ol>
 
-				<p>Note: You should be able to get size/proportion information of your image when opening it locally. You can access the dimensions of a picture by activating the applications menu (JAWS is Shift F10) and selecting "get info" on the image menu. Once you have that information, you can use the proportions to calculate a size that you feel fits in with your page. Your paragraph text default size is approximately 16px in most browsers and h1s are approximately 32px. Think about the proportion of your text content to the images you want to use. </p>
+				<p><strong>Note:</strong> You should be able to get size/proportion information of your image when opening it locally. You can access the dimensions of a picture by activating the applications menu (JAWS is Shift F10) and selecting "get info" on the image menu. Once you have that information, you can use the proportions to calculate a size that you feel fits in with your page. Your paragraph text default size is approximately 16px in most browsers and h1s are approximately 32px. Think about the proportion of your text content to the images you want to use. </p>
 			</li>
 
 
 		</ul>
 
 	<li><strong>Divs</strong> - divider elements, or divs allow you to group a set of elements together in one block-level box. For example, you might create a div element to contain all of the elements for the header of your site (the logo and the navigation), or you might create a div element to contain comments from visitors. In a browser, the contents of the div element will start on a new line, but other than this it will make no difference to the presentation of the page. Here's how you construct a div: &lt;div&gt; Some content &lt;div&gt;. Divs are essential to grouping content that we can act on with CSS or Javascript.</li>
-
+	<br>
 
 	
 	<li><strong>Semantic HTML</strong> - in addition to &lt;em&gt; and &lt;strong&gt; tags we can give our html meaning by nesting basic elements in semantic elements. The following are just a couple examples: </li>
