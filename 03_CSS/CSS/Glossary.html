@@ -9,11 +9,12 @@
 
 <a href="../index.html">CSS Home</a>
 
-<h1>HTML Element Glossary</h1>	
+<h1>HTML Element Glossary</h1>  
 
 <h2>Basic Shell for HTML</h2>
 <pre>
- &lt;html>
+ &lt;!DOCTYPE html>
+ &lt;html lang=&quot;en&quot;>
   &lt;head>
     &lt;title>  &lt;title>
   &lt;/head>
@@ -53,27 +54,29 @@
       
       <li><h3>Unordered List</h3></li>
       <p>this element identifies that an <em>unordered list</em> is going to follow. A list is made up of any number of items.</p>
-        <code>           
-            &lt;ul&gt;<br>
-                &lt;li>Corn&lt;/li><br>
-                &lt;li>Tomatoes&lt;/li><br>
-                &lt;li>Beans&lt;/li><br>
-                &lt;li>Onions&lt;/li><br>
-                &lt;li>Garlic&lt;/li><br>
-            &lt;/ul><br>
+        <code>
+<pre>           
+&lt;ul&gt;
+  &lt;li>Corn&lt;/li>
+  &lt;li>Tomatoes&lt;/li>
+  &lt;li>Beans&lt;/li>
+  &lt;li>Onions&lt;/li>
+  &lt;li>Garlic&lt;/li>
+&lt;/ul>
+</pre>
         </code>
      <li><h3>Ordered List</h3></li>
 
      <p>this element identifies that an <em>ordered list</em> is going to follow. this type of list will automatically add an ascending number to each element in the list</p>
-        <code>           
-            &lt;ol&gt;<br>
-                &lt;li>Add corn&lt;/li><br>
-                &lt;li>Dice and add tomatoes&lt;/li><br>
-                &lt;li>Add beans&lt;/li><br>
-                &lt;li>Chop and sautee onions&lt;/li><br>
-                &lt;li>Mince and add garlic&lt;/li><br>
-            &lt;/ol><br>
-        </code>
+      <pre>           
+&lt;ol&gt;
+  &lt;li>Add corn&lt;/li>
+  &lt;li>Dice and add tomatoes&lt;/li>
+  &lt;li>Add beans&lt;/li>
+  &lt;li>Chop and sautee onions&lt;/li>
+  &lt;li>Mince and add garlic&lt;/li>
+&lt;/ol><br>
+      </pre>
 
       <li><h3>Link</h3></li>
         <code>           
@@ -83,8 +86,8 @@
 
       <p>Strong and emphasis identify a selection of text that has a <em>strong</em> importance you can change your JAWS settings to read these differently.</p>
         <code>           
-            &lt;em>Very Important&lt;/em><br>
-            &lt;strong>Important&lt;/strong>                
+            &lt;em>Italic&lt;/em><br>
+            &lt;strong>Bold&lt;/strong>                
         </code>
       <li><h3>Commenting Code</h3></li>
       <p>You can leave notes for yourself in HTML that the browser will ignore, and won't be rendered on the page</p>
@@ -102,7 +105,7 @@
         do not need a closing tag and should always include an alt attribute.
       </p>
       <h4>Image Example:</h4>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png" alt="Smiley face" height="42" width="42">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png" alt="Smiley face" height="42" >
       <h4>Image HTML:</h4>
 
       <pre>
@@ -128,28 +131,39 @@
       <td>$0</td>
     </tr>
   </table>
+
 <h4>Table HTML (unstyled):</h4>
-      <pre>
-  &lt;table>
-    &lt;tr>
-      &lt;th>Month&lt;/th>
-      &lt;th>Savings&lt;/th>
-    &lt;/tr>
-    &lt;tr>
-      &lt;td>January&lt;/td>
-      &lt;td>$100&lt;/td>
-    &lt;/tr>
-  &lt;/table>
-  </pre>  
+<pre>
+&lt;table>
+  &lt;tr>
+    &lt;th>Month&lt;/th>
+    &lt;th>Savings&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>January&lt;/td>
+    &lt;td>$100&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</pre>  
 
 <li><h3>Audio</h3></li>
 <pre>
-Defines sound content
+
+<audio controls>
+  <source src="coolTrack.wav" type="audio/wav">
+  <source src="coolTrack.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
 &lt;audio controls>
-  &lt;source src="horse.ogg" type="audio/ogg">
-  &lt;source src="horse.mp3" type="audio/mpeg">
+  &lt;source src="coolTrack.wav" type="audio/wav">
+  &lt;source src="coolTrack.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
 &lt;/audio>
 </pre>
+
+<p>Note: The controls attribute adds audio controls, like play, pause, and volume.The &lt;source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. The text between the &lt;audio> and &lt;/audio> tags will only be displayed in browsers that do not support the &lt;audio> element.</p>
 
 </ol>
 
@@ -172,12 +186,12 @@ Defines sound content
         The div tag defines a division or a section in an HTML document. The div
         tag is used to group block-elements to format them with CSS.
       </p>
-      <pre>
-  &lt;div style="color:#0000FF">
-    &lt;h3>This is a heading&lt;/h3>
-    &lt;p>This is a paragraph.&lt;/p>
-  &lt;/div>
-  </pre>
+<pre>
+&lt;div style="color:#0000FF">
+  &lt;h3>This is a heading&lt;/h3>
+  &lt;p>This is a paragraph.&lt;/p>
+&lt;/div>
+</pre>
 
 
 
@@ -202,21 +216,23 @@ Defines sound content
         different pages on a site. It usually goes at the top of a web page and
         is consistent and present on all pages of the site.
       </p>
-      <pre>
-    &lt;nav role="navigation">
-    &lt;a href="about.html">About&lt;/a> 
-    &lt;a href="contact.html">Contact&lt;/a> 
-    &lt;a href="faq.html">Frequently Asked Questions&lt;/a> 
-  &lt;/nav>
-  </pre>
+<pre>
+&lt;nav>
+  &lt;ul>
+    &lt;li>&lt;a href="about.html">About&lt;/a>&lt;/li> 
+    &lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="faq.html">Frequently Asked Questions&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+</pre>
 
       <li><h3>Section</h3></li>
       <p>Defines different sections on a site.</p>
       <pre>
-    &lt;section>
-    &lt;h1>WWF<&lt;/h1>
-    &lt;p>The World Wide Fund for Nature (WWF) is....&lt;/p>
-    &lt;/section>
+&lt;section>
+  &lt;h1>WWF<&lt;/h1>
+  &lt;p>The World Wide Fund for Nature (WWF) is....&lt;/p>
+&lt;/section>
   </pre>
 
       <li><h3>Article</h3></li>
@@ -233,11 +249,11 @@ Defines sound content
         <li>Blog post</li>
       </ul>
       <pre>
-  &lt;article>
-    &lt;h1>What Does the World Wildlife Fund (WWF) Do?&lt;/h1>
-    &lt;p>WWF's mission is to stop the degradation of our planet's natural environment,
-    and build a future in which humans live in harmony with nature.&lt;/p>
-  &lt;/article>
+&lt;article>
+  &lt;h1>What Does the World Wildlife Fund (WWF) Do?&lt;/h1>
+  &lt;p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.&lt;/p>
+&lt;/article>
   </pre>
 
       <li><h3>Footer</h3></li>
