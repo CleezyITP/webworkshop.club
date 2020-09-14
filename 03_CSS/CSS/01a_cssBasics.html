@@ -1,0 +1,72 @@
+<html lang='en'>
+
+<head>
+    <title>CSS Concepts</title>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+<a href="../index.html">CSS Home</a>
+    <h1> CSS Basic Concepts </h1>
+
+<h2>Font Type and Font-Family</h2>
+
+<p>When discussing fonts, there are two main font types - Serif and Sans-Serif. Serif fonts (eg Times New Roman and Georgia), have small lines, dangly bits, or little decorative stroke that continues after the end of the stems of characters. Because of these extra dangly bits or flair - Serif fonts can look more official or professional. While Sans-serif (eg Helvetica, Arial, and Verdana) are "Sans" or without - additional the lines at the ends of characters. They tend to look cleaner, more modern, and streamlined. When you create a webpage, the default font in most browsers is Times New Roman.</p>
+
+<table>
+	<caption>Web Safe Font-Families</caption>
+	 <tr>
+		<th>Serif</th>
+		<th>Sans-Serif</th>
+	</tr>
+	<tr>
+		<td style="font-family: 'Times New Roman', serif;">Times New Roman</td>
+		<td style="font-family:'Arial',sans-serif;">Arial</td>
+	</tr>	
+	<tr>
+		<td style="font-family: 'Georgia', serif;">Georgia</td>
+		<td style="font-family:'Helvetica',sans-serif;">Helvetica</td>
+	</tr>
+	<tr>
+		<td style="font-family: 'Palatino', serif;">Palatino</td>
+		<td style="font-family:'Verdana',sans-serif;">Verdana</td>
+	</tr>
+	<tr>
+		<td style="font-family: 'Courier', serif;">Courier</td>
+		<td style="font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;">Comic Sans</td>
+	</tr>	
+	<tr>
+		<td style="font-family: 'Book Antiqua', serif;">Book Antiqua</td>
+		<td style="font-family: 'Geneva', sans-serif;">Geneva</td>
+	</tr>			
+</table>
+
+
+
+<p><strong>Tip:</strong> Try to limit your use of fonts to font families to about two on your website, and note that serif fonts are great for larger text, but can be harder to read if you have a lot of dense paragraph/body text. You can add many more types of fonts to your project, but you may need to include a font file (eg OTF/TTG) to your project folder and define the font in your CSS. More on using <a href="https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp">non-web-safe fonts at w3schools.com</a></p>
+
+<h2>CSS Units of Measure</h2>
+
+<p>The values of our CSS properties that deal in space and size are usually written in either ems, pixel units (px), or percentages. Legibility can be improved by controlling the width of boxes containing text and the spacing between elements. </p>
+
+<h3>Ems</h3>
+
+<p>Ems is a unit that is relative to the font-size being used (2em means 2 times the size of the current font). Ems are calculated as a percentage of the font sized used. The average browser renders paragraph fonts at 16px by default, so if you change the font size of your paragraphs to 2em, they will be 32px.</p>
+
+<h3>Pixels</h3>
+
+<p>Pixels are the smallest unit of a computer screen. As a unit of measure, pixels are an absolute value that you can assign elements and fonts. The physical size of a pixel varies depending on your computer's resolution. For example, a laptop with a screen resolution of 2560 by 1600, may have a pixel density of 227 pixels per inch, or PPI. This means an object on the screen that is 200 pixels wide and 200 pixels high will be roughly size of a US quarter on this laptop screen. As reference, your paragraph text default size is approximately 16px in most browsers and h1s are approximately 32px.</p>
+
+<p><strong>Note:</strong>For context, approximately about 30% of web users have a screen resolution of 1366x768px. And about 95% have a screen resolution of 1024x768px or higher. When designing for these variations in screen resolution, it is helpful to target common a common resolution (designers often reference 1366x768px or 1400x800px), or use percentages.</p>
+
+
+<h3>Percentages</h3>
+<p>Percentages are calculated relative to the parent element. If the body has a default text size of 16px, and we adjust paragraph elements to be 200%, they will also be 32px. Percentages are a great way to size other elements like divs, images, paragraphs, etc. Because percentages are relative to parent elements, elements that are sized with percentages resize with browser windows.</p>
+    
+<a href="boxModel.html">Next: Spacing and Alignment</a>
+<br><a href="01_cssBasics.html">Previous: Intro to CSS</a>
+</body>
+
+
+</html>

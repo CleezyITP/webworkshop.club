@@ -8,20 +8,42 @@
 
 <body>
 <a href="../index.html">CSS Home</a>
+<h1>Element Spacing and Alignment</h1>
 
-    <h1>Box Model</h1>
+<h2>Box Model</h2>
 
-<p>CSS treats each HTML element as if it lives in its own box (we have a tactile demonstration). You can set several properties that affect the appearance/dimensions of these boxes.</p>
+<p>CSS treats each HTML element as if it lives in its own box. You can set several properties that affect the appearance and imensions of an element box.</p>
 
-<p> The properties of the box we can control with CSS are element margins, and padding
+<p> The properties of the box we can control with CSS are element padding, borders, and margins
 for each box with CSS. Here is a breakdown of what each means:</p>
 
 <ol> 
+<li>Content -
+Is the main substance of your element, and lives in the center of the box. For example, your paragraph text.
+</li>
+
 <li>Padding -
 Padding is the space between
 the content and border of a box.
-Adding padding increases the total size of an element can increase the
+Adding padding increases the total size of an element and can increase the
 readability of its contents.
+
+<p><strong>Note:</strong> For our class site, I have used the padding property on all tables and navigation elements. This gives a little extra space, or breathing room between the data in my table cells/link text in my navigation, and the border that surrounds them. Here is how I have done that for my table heading and data elements:
+<pre>
+th, td{	
+	padding: 5px 20px 5px 20px;
+}
+</pre>
+5 pixels of padding have been added to the top and bottom, and 20 pixels of padding to the right and left. In order, the above numbers address the top, right, bottom, and left of the box or TRBL (Trouble) when written out like this. Although it takes a little longer, I could have also written my CSS like this:
+<pre>
+th, td{	
+	padding-top: 5px;
+	padding-right: 20px; 
+	padding-bottom:20px;
+	padding-left:5px;
+}
+</pre>
+</p> 
 </li>
 <li> Border -
 Every box has a border (even if
@@ -29,6 +51,15 @@ it is not visible or is specified to
 be 0 pixels wide). The border can be used to form a visual outline of content, and 
 separates the edge of one box
 from another. The border-style property can be set to solid, dotted, and double. 
+
+<p><strong>Note:</strong> On our class site, I have given my table data and navigation links a border. This helps to distinguish important information visually. In order to add a border to my navigation, I gave each list item the class="main-nav", and because I wanted the same border on the top, right, bottom, and left, I wrote the following in my CSS:
+
+<pre>
+.main-nav li {
+    border: 2px solid;
+}
+</pre>	
+
 </li>
 <li>
 Margin -
@@ -37,15 +68,34 @@ of the border. You can set the
 width of a margin to create a
 gap between the borders of two
 adjacent boxes. Margins impact the spacing between elements.
-</li>
 
+<p><strong>Note: </strong>For our class website, I have changed the default margin of all the elements in the body to 40px (I could have also set the margin to 2-3% for a similar effect). This creates a little extra whitespace at the top, right, bottom and left of our class content. Here is how I have done that: 
+<pre>
+body{
+	margin:40px;	
+}
+</pre>
+</p>
+ 
+</li>
 </ol>
 
-<p></p>
+
+<h2>Text-Align</h2>
+<p>The text-align property is used to set the horizontal alignment of a text. All text can be left or right aligned, centered, or justified. By default our elements </p>
+<p>
+ <strong>Note:</strong> On our class site, I have updated just the heading level 1 (h1s) so that they are aligned center on the page. This alignment of main headings on each page, gives them visual prominence without breaking up the left to right reading flow of contents. Here is how I have done that:
+<pre>
+h1{
+	text-align:center;
+}
+</pre>
+For more on position and alignment of elements, check out the <a href="https://www.w3schools.com/css/css_align.asp">W3School.com Horizontal and Vertical Align page</a>
+</p>
 
 
-
-<p> Let's talk about color! <a href="../HTML/webcolors.html">Next: Web Colors</a></p>
+<a href="02_design_tips.html">Next: Design Tips</a><br>
+<a href="selectors.html">Previous: Selectors</a>
 </body>
 
 
