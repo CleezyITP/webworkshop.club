@@ -44,15 +44,19 @@ th, td{
 }
 </pre>
 </p> 
-</li>
-<li> Border -
-Every box has a border (even if
-it is not visible or is specified to
-be 0 pixels wide). The border can be used to form a visual outline of content, and 
-separates the edge of one box
-from another. The border-style property can be set to solid, dotted, and double. 
+<p> If I wanted the padding on my element to be the same on all sides (for example 10px), I could write the following: </p>
 
-<p><strong>Note:</strong> On our class site, I have given my table data and navigation links a border. This helps to distinguish important information visually. In order to add a border to my navigation, I gave each list item the class="main-nav", and because I wanted the same border on the top, right, bottom, and left, I wrote the following in my CSS:
+<pre>
+th, td{	
+	padding: 10px;
+	
+}
+</pre>
+
+</li>
+<li> Border - Every box has a border (even if it is not visible or is specified to be 0 pixels wide). The border can be used to form a visual outline of content, and separates the edge of one box from another. The border-style property can be set to solid, dotted, and double. 
+
+<p><strong>Note:</strong> On our class site, I have given my table data and navigation links a border. This helps to distinguish important information visually. In order to add a border to my navigation (which is a list of links inside nav opening and closing tags), I gave each list item the class="main-nav", and because I wanted the same border on the top, right, bottom, and left of all the list items in my navigation elements, I wrote the following in my CSS:
 
 <pre>
 .main-nav li {
@@ -62,12 +66,8 @@ from another. The border-style property can be set to solid, dotted, and double.
 
 </li>
 <li>
-Margin -
-Margins sit outside the edge
-of the border. You can set the
-width of a margin to create a
-gap between the borders of two
-adjacent boxes. Margins impact the spacing between elements.
+Margin - Margins sit outside the edge of the border. You can set the width of a margin to create a
+gap between the borders of two adjacent boxes. Margins impact the spacing between elements.
 
 <p><strong>Note: </strong>For our class website, I have changed the default margin of all the elements in the body to 40px (I could have also set the margin to 2-3% for a similar effect). This creates a little extra whitespace at the top, right, bottom and left of our class content. Here is how I have done that: 
 <pre>

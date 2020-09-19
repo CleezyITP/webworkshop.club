@@ -28,6 +28,30 @@ h1, h2, p {
 
         </li>
 
+        
+
+        <li>It is also possible to hide elements using the display and visibility properties. These hidden elements are still read by screen readers and can be a place to leave special messages to other screen reader users. This is helpful when creating "Skip to main content". In order to be useful, the "skip" link should be one of the first on the page, but it can be confusing to sighted users.
+
+<p> Here is a CSS formula for how you can make paragraph text with an ID "message" hidden:</p>
+In my HTML, I can have the following element: <br>
+<pre>&lt;p id="message"> Screen reader only message&lt;/p></pre>
+And the following in my CSS:
+<pre>  
+#message {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+</pre> 
+            
+<p>position:absolute; tells the browser to remove the element from the page flow and to begin positioning it. left:-10000px; moves the content 10000 pixels to the left. top:auto; tells the browser to position the content vertically at the same location it was originally. width:1px;, height:1px; and overflow:hidden; tell the browser to make the element one pixel in size and to visually hide everything that does not fit into that pixel. </p>
+
+        </li>
+
+
     </ol>
     
     <br/>

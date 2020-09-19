@@ -4,4 +4,4 @@ This introductory web-development course is for students that are blind and use 
 
 
 
-Course hosted at [webworkshop.club](http://webworkshop.club/index.html)
+test! test!

@@ -39,6 +39,31 @@ body{
 
         </ol>
     </p>
+
+    <p><strong>Note:</strong> If I want to do the same thing to a couple of elements I can add those add more elements to my selector with a comma seperating them. For example, if I want to update all my heading levels to be in Verdana, I would write the following: 
+<pre>
+h1, h2, h3, h4, h5, h6 {
+    font-family:Verdana;
+}  
+</pre> 
+
+Element, ID, and Class selectors can be combined with a space seperating them to get really specific about the elements you want to apply style to. For example, if I want to style the list items in my navigation differently than the other list items on my site, I can give my navigation opening tag a class attribute and combine class and element selectors in my CSS. 
+
+Here is what my HTML could be:
+<pre>
+&lt;nav class=&apos;main-nav">
+    &lt;ul>
+        &lt;li>&lt;a href=&apos;about.html>about&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+</pre>
+And here is what my CSS would be: 
+<pre>
+main-nav li{
+    padding:2%;
+}
+</pre>
+</p>
     
 <a href="boxModel.html">Next: Element Spacing</a>
 <br><a href="addingCss.html">Previous: Adding CSS</a>

@@ -14,6 +14,9 @@
     <ol>         
             <li>By default, browsers will render text in the font Times New Roman and all content aligned left. The first thing I usually do, is update the font family to make my site look more modern and easier to read, but it depends on the tone you want to set with your users. 
 
+            <p>
+                Try to limit your use of font families to about two on your website, and note that serif fonts are great for larger text, but can be harder to read if you have a lot of dense paragraph/body text. 
+            </p>
             <p> As a best practice, the font-family property should hold several font names as a fallback system, to ensure maximum compatibility between browsers/operating systems. If the browser does not support the first font, it tries the next font. The following is an example of how to change your font family and use fallback fonts (in the first example, Helvetica is the fallback for Arial)</p>
 
 <pre>
@@ -27,25 +30,25 @@ body {
 
         </li>
 
-        <li><p> As a we have just learned, adjusting the default margins can increase the legibility of your sites. To begin, here is an example of adding a margin to a page's body element. We can create room between the top, right, bottom, and left edges of the browser window and content of a site: </p>
+        <li><p> As a we have just learned, adjusting the default margins can increase the legibility of your sites. Because we already have a CSS declaration for the body element started, if we want to add a margin to our body element, we can just add our margin declaration for after the font family declaration. In this example, we create 40px of room between the top, right, bottom, and left edges of the browser window and content of our site: </p>
 
 
-            <pre>body {
+<pre>
+body {
+    font-family: "Arial", Helvetica, sans-serif;
     margin: 40px;
 }
-            </pre>
+</pre>
 
-        Order of numbers address top, right, bottom, and left (The acronym TRBL or trouble can help you remember this order).
 
-            </p>
 
         </li>
 
-
         <li>It is possible to align text to the left side, right side, or center it on a page. For English, paragraph text is usually aligned left. If you want to center something, it's usually best done with headings or short sentences. 
 
-            <p> Here is an example of how you can make all headings level one centered:
-                <pre>h1 {
+            <p> Here is an example of how you can make all headings level one centered, and adjusted to be 3em (48px):
+<pre>h1 {
+    font-size:3em; 
     text-align: center;
 }
                 </pre> 
@@ -53,27 +56,7 @@ body {
         </li>
         <li>Readability is also enhanced when proper punctuation and capitalization is used. Make sure that you are meticulous with these things to enhance readability.</li><br>
 
-        <li>It is also possible to hide elements using the display and visibility properties. These hidden elements are still read by screen readers and can be a place to leave special messages to other screen reader users
-
-            <p> Here is a CSS formula for how you can make paragraph text with an ID "message"  hidden:</p>
-                <pre>  
-#message {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
-                </pre> 
-            
-
-
-        </li>
-
-        
-
-    </ol>
+</ol>
     
     <br>
     <a href="activity.html">Next: CSS Activity 1</a><br>
