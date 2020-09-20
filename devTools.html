@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Chrome Developer Tools</title>
-	<link rel="stylesheet" href="styles.css" type="text/css"> 
-</head>
-<body>
-<a href="Resources.html">Resources Home</a>
-<h1>Using Chrome Developer Tools to Validate CSS</h1>
-<p>I should start by saying that the Google Chrome Developer Tools are not well designed or implemented for use with AT. As one screen reader user noted, &quot;the UI/UX of this interface is atrocious, truly terrible and devoid of meaningful clues or some basic a11y love.&quot; However, for our purposes, we are going to forego bad UX to get vital information about whether our CSS has impacted the style of our webpages. <strong>Note:</strong> These instructions are for accessing the Chrome Developer Tools using JAWS. For instructions on how to use them with VoiceOver, please check out Google&apos;s documentation <a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation#elementstabs">Google&apos;s Guide to Navigating Chrome DevTools With Assistive Technology (Element and styles tab sections)</a></p>
+	<head>
+		<title>Chrome Developer Tools</title>
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+	</head>
+	<body>
+		<a href="Resources.html">Resources Home</a>
+		<h1>Using Chrome Developer Tools to Validate CSS</h1>
 
-<p>As a test example, let&apos;s imagine that you&apos;re interested in getting the style of the h1 element on the class website...</p>
-<ol>
-	<li>Open the class webpage in Chrome (this page is fine, as long as you are in Chrome)</li>
-	<li>Use the key command Control+Shift+I to open Chrome&apos;s developer tools</li>
-	<li>From here, you can use forms mode to navigate to the &apos;Elements&apos;tab, then tab to the &apos;page DOM&apos; tree view. The page DOM tree view, is your HTML as it is rendered in the browser and should be navigable by using the up/down arrow keys (&apos;Page DOM&apos; <emphasis>table</emphasis> for VO users). </li>
-	<li>Once you locate your h1 in the page DOM tree using the arrow keys, press the plus key on your number pad right to get out of forms mode.
-Then either: </li>
-		<ul>
-			<li>Arrow down and listen for the margin (that seems to be an anchor/marker for what we&apos;re doing). If you find yourself at &quot;margin clickable&quot;, arrow up to get to the tree view just above.</li>
-			<li>Or use control+end to take you to the bottom, and then I hit shift+C to move back to the last tree view (tree views can be navigated to like combo boxes). </li>
-		</ul>
-	<li>Once on this tree view, press Enter, to activate forms mode, then press Control home and then press down arrow until you hear H1 CSS selector. 
-	</li>
-	<li>Press enter here and press tab to move through CSS declarations (properties and values). Your screen reader may instruct you to use the arrow keys, but we have had better luck using tab. If you try this on the class website, you should get the following: h1, font-family: myFontBold, font-size: 3.5em, text-align: center. Those are the css properties added to the class website's h1s! </li>
-</ol>
+		<p>
+			<strong>Note:</strong> These instructions are for accessing the
+			Chrome Developer Tools using JAWS. For instructions on how to use
+			them with VoiceOver, please check out Google&apos;s documentation
+			<a
+				href="https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation#elementstabs"
+				>Google&apos;s Guide to Navigating Chrome DevTools With
+				Assistive Technology (Element and styles tab sections).</a
+			>
+			If you are an NVDA user and want to validate your CSS work, please
+			check out the
+			<a
+				href="https://addons.nvda-project.org/addons/developerToolkit.en.html"
+				>NVDA developer toolkit add-on</a
+			>
+		</p>
 
-<p><strong>Note:</strong> If you keep goin, you can actually directly edit styles in this styles pain, but that might be a good indicator that you've gotten to the bottom of all of the computed styles for that element.</p>
+		<p>
+			You can use if you use insert+f on an element, JAWS will speak out the name of the font being used  along with other formatting info about the character. However, if you want additional information about the CSS of an element, Chrome Developer Tools can be quite useful.</p> 
 
-</body>
+			<p>I should start by saying that the google Chrome Developer Tools are
+			not well designed or implemented for use with AT. As one screen
+			reader user noted, &quot;the UI/UX of this interface is atrocious,
+			truly terrible and devoid of meaningful clues or some basic a11y
+			love.&quot; However, for our purposes, we are going to forego bad UX
+			to get vital information about whether our CSS has impacted the
+			style of our webpages.
+		</p>
+
+		<p>
+			As a test example, let&apos;s imagine that you&apos;re interested in
+			getting the style of the h1 element on the class website...
+		</p>
+		<ol>
+			<li>
+				Open the class webpage in Chrome (this page is fine, as long as
+				you are in Chrome)
+			</li>
+			<li>
+				Use the key command Control+Shift+I to open Chrome&apos;s
+				developer tools
+			</li>
+			<li>
+				From here, you can use forms mode to navigate to the
+				&apos;Elements&apos;tab, then tab to the &apos;page DOM&apos;
+				tree view. The page DOM tree view, is your HTML as it is
+				rendered in the browser and should be navigable by using the
+				up/down arrow keys (&apos;Page DOM&apos;
+				<emphasis>table</emphasis> for VO users).
+			</li>
+			<li>
+				Once you locate your h1 in the page DOM tree using the arrow
+				keys, press the plus key on your number pad right to get out of
+				forms mode. Then either:
+			</li>
+			<ul>
+				<li>
+					Arrow down and listen for the margin (that seems to be an
+					anchor/marker for what we&apos;re doing). If you find
+					yourself at &quot;margin clickable&quot;, arrow up to get to
+					the tree view just above.
+				</li>
+				<li>
+					Or use control+end to take you to the bottom, and then I hit
+					shift+C to move back to the last tree view (tree views can
+					be navigated to like combo boxes).
+				</li>
+			</ul>
+			<li>
+				Once on this tree view, press Enter, to activate forms mode,
+				then press Control home and then press down arrow until you hear
+				H1 CSS selector.
+			</li>
+			<li>
+				Press enter here and press tab to move through CSS declarations
+				(properties and values). Your screen reader may instruct you to
+				use the arrow keys, but we have had better luck using tab. If
+				you try this on the class website, you should get the following:
+				h1, font-family: myFontBold, font-size: 3.5em, text-align:
+				center. Those are the css properties added to the class
+				website's h1s!
+			</li>
+		</ol>
+
+		<p>
+			<strong>Note:</strong> If you keep goin, you can actually directly
+			edit styles in this styles pain, but that might be a good indicator
+			that you've gotten to the bottom of all of the computed styles for
+			that element.
+		</p>
+	</body>
 </html>
