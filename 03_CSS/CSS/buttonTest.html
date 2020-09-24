@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="myscripts.js"></script>
+<title> Javascript example </title>
+</head>
+<body>
+<h1> Button color changer example </h1>
+<p> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
+<button onclick="red()"> change background color to red </button>
+<button onclick="green()</button>
+<button onclick="blue()"change background color to blue </button>
+<p aria-live="assertive" id="color"> background is now white </p>
+</body>
+
+
+<script>
+
+
+function red() {
+    document.body.style.backgroundColor = "red" ;
+    document.getElementById("color").innerHTML = "background is now red!" ;
+}
+function green() {
+    document.body.style.backgroundColor = "green" ;
+    document.getElementById("color").innerHTML = "background is now green!" ;
+}
+function blue() {
+    document.body.style.backgroundColor = "blue" ;
+    document.getElementById("color").innerHTML = "background is now blue!" ;
+}
+
+
+</script>
+
+</html>
