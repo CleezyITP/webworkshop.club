@@ -1,19 +1,97 @@
 <html>
 
 <head>
-    <title>CSS Activity</title>
+    <title>CSS Activity 2</title>
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body>
 <a href="../index.html">CSS Home</a>
 
-    <h1> CSS/Design Activity 2</h1>
+<h1> CSS Activity 2</h1>
+
+ <p> Let's try and pull together some new color ideas into your CSS file. In this activity, we will develop a color palette/scheme for your site by selecting a background, base, and at least one accent color.</p>
+
+<h2>How to pick colors:</h2>
+
+<p>Most web color schemes contain 2-6 colors, and often include combinations of white, dark gray and/or light gray, black, and an accent color(s).</p>
+
+<p>When selecting colors for your site, think about the subject of your site and target audience. The colors of a website for an architecture firm would likely be very different from the colors for a kids club. Think about who will be using the website and how you want them to feel (serious, playful, etc). If you have a logo with an established color, that will usually be a good color to use as an accent on different elements.</p>
+
+<h3>Color Contrast</h3>
+
+<p>
+It is important to note that when using color and text you need to ensure that there is sufficient contrast between the background and the copy. This will help people with color blindness or low vision read the text on your website. There are many tools you can use - You can check the contrast of your color choices by using
+<a href="https://webaim.org/resources/contrastchecker/">WebAIM&apos;s contrast analyzer</a>.
+</p>
+
+<h2>Choosing elements to change:</h2>
+
+		In order to understand the use of color on the web in a practical way,
+		it is important to identify the difference between background, base and
+		accent colors, and to systematically apply colors across elements:
+		<ul>
+			<li>
+				<strong>Background Color:</strong> This color is typically the most dominant and
+				sets the general look and feel of the site. The default
+				background is white. Some common background examples are white, black, grey
+				and blue. The CSS property to address background is background-color.
+				In the following example, I am setting my background to the web color Old Lace (white with a slightly peachy hue). I have used the web color name, but the same effect could be achieved by swapping OldLace with 253, 245, 230 (RGB), or #FDF5E6 (Hex).	
+
+				<pre>
+body{	
+	background-color:OldLace;
+}
+				</pre>
+			</li>
+			<li>
+				<strong>Base Color(s):</strong> This color is used to break up the background
+				color and is often a neutral color (white, grey, brown, and
+				black colors). The base color normally applies to menu elements, heading and text element backgrounds, and sometimes images/illustrations. A common
+				example is a website with a white background and dark grey base. Base colors can be achieved by changing the background of specific elements (like tables, headings, divs) and borders. In the following example, I change the border and background of all table elements to light gray. I have used the web color name, but the same effect could be achieved by swapping the LightGray for 211, 211, 211 (RGB), or #D3D3D3 (Hex).	
+
+				<pre>
+table {
+    background-color:LightGray;
+    border: 1px solid black;    
+}
+				</pre>
+
+			</li>
+			<li>
+				<strong>Accent Color:</strong> This color is used least but gives the site additional
+				personality. Your accent color is distinct from background and
+				the base colors - and is typically the boldest color. The accent
+				is typically found in logos, buttons, links, and sometimes
+				headings, images, or illustrations. An example is a website with
+				white background, the title and texts are dark grey and there is
+				a big button in color red that reads “buy here”. The CSS property to influence text is color. In the following example, I set my link text and button background to red (default links are blue). I have used the web color name, but the same effect could be achieved by swapping the word red for 255, 0, 0 (RGB), or #FF 00 00 (Hex). If you want to use more than 1 accent, consider either an analogous, or complementary scheme. 
+
+				<pre>
+a {
+	color: red;
+}
+
+button {
+    background-color: red;
+  	border: none;
+  	color: white;
+  }
+				</pre>	
+			</li>
+		</ul>
 
 
-<h2>Creating A Color Scheme</h2>
 
-<h3>How Many Colors</h3>
+
+<p>The palette for your website is 100% up to you to create, but please be prepared to describe your rationale, and test your foreground and background colors using either <a href='https://www.levelaccess.com/color-contrast-checker/'>The Level Access Contrast Checker</a> or <a href="https://webaim.org/resources/contrastchecker/">Webaim&apos;s contrast analyzer</a> (accepts RGB and Hex values). Use your existing HTML elements to implement your new color scheme.</p>
+
+
+
+
+
+
+<!-- <h3>How Many Colors</h3>
 <p>Five is a good number that gives plenty of options for illustrating the concepts here, and it’s a workable number in a design. But feel free to have more or fewer colors in your own schemes. A lot of websites might only use three colors in their designs. Others use only two. And some might use eight or ten (which is a lot trickier than using fewer colors). 
 </p>
 
@@ -85,14 +163,12 @@ As you can see, we really don’t need much more than the palette we’ve create
 
 (Using the techniques above, you can extend your color palette to hold more colors as and when you need them)
 
-As you’re designing, you might decide it’s appropriate to introduce some more colors to your palette. That’s totally fine! As long as you’re attentive, you can use the steps above to find more colors that work with your scheme.
+As you’re designing, you might decide it’s appropriate to introduce some more colors to your palette. That’s totally fine! As long as you’re attentive, you can use the steps above to find more colors that work with your scheme. -->
+
 
     
-    <p> Let's try and pull together some new ideas into your CSS file. First, develop a color palette/scheme for your site based on color theory descriptions. This palette is 100% up to you to create, but please be prepared to describe your rationale, and test your foreground and background colors using either <a href='https://www.levelaccess.com/color-contrast-checker/'>The Level Access Contrast Checker</a> (accepts RGB and Hex values) or <a href="https://webaim.org/resources/contrastchecker/">Webaim&apos;s contrast analyzer</a> (Hex only). Use Divs, and your existing HTML elements to implement your new color scheme.</p>
-    
     
 
-<p> Refer to design tips for help <a href="../../placeholder.html">Design Tips 2</a></p>
 
 <a href="../../04_JavaScript/index.html">Next: JavaScript</a>
 

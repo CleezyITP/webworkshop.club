@@ -10,6 +10,7 @@
 }
 
 table, th, td {
+  
   font-family: myFont;
   border: 1px solid black;
   border-collapse: collapse;
@@ -20,6 +21,7 @@ table, th, td {
 body{
 	font-family: myFont;				
   margin: 40px;
+
     
 
 }
@@ -27,6 +29,7 @@ body{
 
 
 h1{
+
 	font-family: myFontBold; 
   font-size:3.5em; 
   text-align: center;
@@ -35,6 +38,7 @@ h1{
 
 h2, h3{
   font-family: myFontBold;
+
 
 }
 
@@ -50,7 +54,7 @@ h2, h3{
     display: flex;
     flex-flow: wrap;
     list-style: none; /* This removes the list bullets */
-
+    
   }
   
  .site-nav li {
