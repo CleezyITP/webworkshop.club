@@ -15,11 +15,11 @@
 <body>
 <a href="../../index.html">Javascript Home</a>
 
-    <h1>Color Changer Example</h1>
+    <h1>Javascript Example 1: Change background color</h1>
     
-    <p> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
+    <p class='white'> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
 
-     <p aria-live="assertive" id="color">The background of this page is white</p>
+     <p class='white' aria-live="assertive" id="color">The background of this page is white</p>
 
     <button type="button" onclick="red()">change background color to red</button>
     <button type="button" onclick="green()">change background color to green</button>
@@ -40,32 +40,37 @@
 
         function blue() {
             document.body.style.backgroundColor = "blue";
-            document.getElementById("color").innerHTML = "The background is blue now!";
-
+            // let l =document.querySelectorAll('body');
+            // //var x =document.getElementsByClassName('white');
+            // y=l.length;
+            // for (i=0; i<y;i++){
+            //     console.log("pookie");
+            //     l[i].style.color='white';
+            // }
+            document.getElementById("color").innerHTML = "The background is blue!";
         }
 
     </script>
-    <br />
-    <h2>HTML Code:</h2>
-    <pre><code>
+    <br>
+    <h2>HTML:</h2>
+<pre><code>
 &#x3C;!DOCTYPE html&#x3E;
 &#x3C;html&#x3E;
-&#x3C;head>
-&#x3C;script src="myscripts.js">&#x3C;/script>
-&#x3C;title&#x3E; Javascript example &#x3C;/title&#x3E;
-&#x3C;/head&#x3E;
-&#x3C;body&#x3E;
-&#x3C;h1&#x3E; Button color changer example &#x3C;/h1&#x3E;
-&#x3C;p&#x3E; There are three buttons on this page. When you select one it will change the background color and let you know about it. &#x3C;/p&#x3E;
-&#x3C;button type="button" onclick=&#x22;red()&#x22;> change background color to red &#x3C;/button&#x3E;
-&#x3C;button type="button" onclick=&#x22;green()&#x22;> change background color to green &#x3C;/button&#x3E;
-&#x3C;button type="button" onclick=&#x22;blue()&#x22;>change background color to blue &#x3C;/button&#x3E;
-&#x3C;p aria-live=&#x22;assertive&#x22; id=&#x22;color&#x22;&#x3E; background is now white &#x3C;/p&#x3E;
-&#x3C;/body&#x3E;
+    &#x3C;head>
+        &#x3C;script src="myscripts.js">&#x3C;/script>
+        &#x3C;title&#x3E; Javascript example &#x3C;/title&#x3E;
+    &#x3C;/head&#x3E;
+    &#x3C;body&#x3E;
+        &#x3C;h1&#x3E; Button color changer example &#x3C;/h1&#x3E;
+        &#x3C;button type="button" onclick=&#x22;red()&#x22;> change background color to red &#x3C;/button&#x3E;
+        &#x3C;button type="button" onclick=&#x22;green()&#x22;> change background color to green &#x3C;/button&#x3E;
+        &#x3C;button type="button" onclick=&#x22;blue()&#x22;>change background color to blue &#x3C;/button&#x3E;
+        &#x3C;p aria-live=&#x22;assertive&#x22; id=&#x22;color&#x22;&#x3E; background is now white &#x3C;/p&#x3E;
+    &#x3C;/body&#x3E;
 &#x3C;/html&#x3E;
 </code>
 </pre>
-<h2>Javascript Code: </h2>
+<h2>Javascript:</h2>
 <pre>
 <code>
 

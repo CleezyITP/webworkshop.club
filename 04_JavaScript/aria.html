@@ -8,9 +8,17 @@
 <body>
     <!-- <style type="text/css">font-family: 'Helvetica', Helvetica, sans-serif;</style> -->
     <a href="index.html">JavaScript Home</a>
-    <h1>ARIA</h1>
-<p> To make changes announce to the screen reader, you must add the aria-live attribute to the element that will change. The two values you can add to the attrbute are polite and assertive- aria-live="polite" (polite will announce once other actions are complete), and aria-live="asertive" (assertive will announce immediately) </p>
+    <h1>ARIA Live Regions</h1>
+<p>A lot of times, Javascript is used to make dynamic content updates, without reloading a webpage. To make page changes announce to a screen reader, it helps to add the aria-live attribute to the element that will update. The two values you can add to the attrbute are polite and assertive:</p>
+<ul>
+<li>	
+<pre>aria-live=&#34;polite&#34;</pre>Polite will announce updates once other actions are complete. <br>In other words, the screen reader will wait until the user pauses before announcing the update)
+</li>
+<li>
+<pre>aria-live=&#34;asertive&#34;</pre>Assertive will announce immediately
+</li>
 
+<p>Often, update messages are added to a text element like a paragraph, but can be used to update whole sections of content (like the a group of headings and paragraphs elements inside a div)</p>  
 
 <a href="Javascript/01_introduction_to_js.html">Next: Javascript Basics</a>
 

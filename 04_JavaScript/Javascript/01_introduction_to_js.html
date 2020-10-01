@@ -1,41 +1,127 @@
 <html>
+    <head>
+        <title>Intro to Javascript</title>
+        <link rel="stylesheet" href="../../styles.css" />
+    </head>
+    <!-- this is a comment -->
 
-<head>
-    <title>Intro to Javascript</title>
-    <link rel="stylesheet" href="../../styles.css">
-</head>
-<!-- this is a comment -->
+    <body>
+        <a href="../index.html">JavaScript Home</a>
+        <h1>Javascript basics</h1>
 
-<body>
-<a href="../index.html">JavaScript Home</a>
-    <h1>Javascript basics</h1>
-    
-    <h2>What is Javascript?</h2>
-    <p>HTML and CSS are called <em>markup languages</em>. They describe certain elements of a document. Javascript is a <em>programming language</em>. It allows you to change elements on the page based on user actions. Just like HTML and CSS, you can write javascript in notepad, and it will run in your browser.</p>
+        <h2>What is Javascript?</h2>
+        <p>
+            HTML and CSS are called <em>markup languages</em>. They describe
+            certain elements of a document. Javascript is a
+            <em>programming language</em>. It allows you to change elements on
+            the page based on user actions. Just like HTML and CSS, you can
+            write javascript in notepad, and it will run in your browser.
+        </p>
 
-    <h2>The language</h2>
-    <p>Javascript has some qualities that are different from CSS and HTML that are part of most programming languages. We'll discuss two of them, variables and functions.</p>
-    
-    <h3>Variables</h3>
-    <p>A variable is something you define in your program that can store a number or word that can change over time. Think of it like a backpack. You might have a computer in a backpack, or a shirt, or some food. you can change the contents whenever you like. Variables are used by programmers to store and change data over time. You can refer to a variable by its name to retrieve the information, or to set the information.</p>
-    <p>You write a variable in javascript like this</p>
-    <pre><code>let myVariableName = someValue ; </code></pre>
-    
+        <h2>The language</h2>
+        <p>
+            Javascript has some qualities that are part of most programming
+            languages. We'll discuss a few here including variables, functions,
+            methods, and events.
+        </p>
 
-    <h3>Functions</h3>
-    <p>Functions are pieces of code that do something. When you write a function, it becomes a collection of code that you can reuse over and over again.  You <em>invoke</em> a function by calling its name when an event happens. Web events might be selecting a button, loading a page, or entering text into a field.</p>
-    <p>You write a function in javascript like this</p>
-    <pre><code>
+        <h3>Variables</h3>
+        <p>
+            A variable is something you define in your program that can store a
+            number or word that can change over time. Think of it like a
+            backpack. You might have a computer in your backpack, but you can
+            change the contents whenever you like. Variables are used by
+            programmers to store and change information.
+        </p>
+        <p>
+            Going back to the backpack metaphor, just like I can add a computer
+            to my bag, add more contents to it, swap content, or take everything
+            out - I can do the same with variables. We create variables by
+            naming them, we then can assign and reassign them information, and
+            then to refer by name to retrieve that information.
+        </p>
+        <p>You can write a variable in javascript like this</p>
+        <pre><code>var backPack="banana"; </code></pre>
+        <p>
+            Here, backPack is the identifier. The equal sign is the assignment
+            operator and it assigns the identifier information (in this case,
+            the word "banana").
+        </p>
+        <p></p>
+
+        <h4>Variable Assignment</h4>
+        <p>
+            Variables can be text values (referred to as strings), or numbers.
+            Strings are always inside single or double quotes.
+        </p>
+        <pre>
+var pi = 3.14;
+var userMessage = &#34;Message received!&#34;;
+    </pre
+        >
+
+        <h3>Functions</h3>
+        <p>
+            Functions are pieces of code that do something. When you write a
+            function, it becomes a collection of code that you can reuse over
+            and over again.
+        </p>
+        <p>You write a function in javascript like this</p>
+        <pre><code>
 function myFunction() {
 }</code></pre>
-    
-    <p>Your code to execute a change in the page would go inside the braces.</p>
-    
 
+        <h3>Methods</h3>
+        <p>
+            When an HTML document is loaded into a web browser, it becomes a
+            document object, with as many nodes, or branches, as you have
+            elements. Javascript has built in Methods for summoning and returning specific parts of your document object.
+        </p>
+        <p>
+            The getElementById() method returns an element with a specified ID. The following example uses this
+            method to return the element with an id="demo".
+        </p>
+        <pre>
+HTML:    
+&#x3C;p id=&#34;demo&#34;>&#x3C;/p>
 
-    <h2>Accessing parts of a webpage</h2>
-    <p>To change parts of a webpage, javascript has a way to talk to the elements in html. It can address elements by calling their name from a hierarchy that outlines the page's html elements, or through an id attribute. Think of it as javascript giving the webpage a shoulder tap and asking it to change something. You can change the content of any attribute or element in a page including text and styles.</p>
-<a href="Javascript_Example_1/index.html">Javascript example 1</a>
-</body>
+Javascript: 
+function myFunction() {
+    var update = &#34;updated!&#34;;
+    document.getElementById(&#34;demo&#34;).innerHTML = update;
+}
+</pre
+        >
+        <p>
+            Your code to execute a change in the page would go inside the
+            braces. When you are ready to use the function, you call it by
+            writing myFunction(). You <em>call</em> or <em>invoke</em> a
+            function by calling its name after an event happens. Web events
+            might be selecting a button, loading a page, or entering text into a
+            field.
+        </p>
 
+        <h3>Events</h3>
+        <p>
+            An HTML event can be something the browser does, or something a user
+            does. We will be focusing on user actions. Specifically, what
+            happend when a user selects a button. In order to call or invoke our
+            function on a button event, we can add the attribute onclick to our
+            button element.
+        </p>
+
+        <pre>&#x3C;button onclick=&#34;myFunction()&#34;>submit&#x3C;/button></pre>
+
+        <h2>Accessing parts of a webpage</h2>
+        <p>
+            To change parts of a webpage, javascript has a way to talk to the
+            elements in html. It can address elements by calling their name from
+            a hierarchy that outlines the page's html elements (element type, or
+            class), or more directly, through an id attribute. Think of it as
+            javascript giving the webpage a shoulder tap and asking it to change
+            something. You can change the content of any attribute or element in
+            a page including text and styles. Let's pull together these concepts into some examples.
+        </p>
+        <a href="Javascript_Example_1/index.html">Javascript example 1</a>
+    </body>
 </html>
