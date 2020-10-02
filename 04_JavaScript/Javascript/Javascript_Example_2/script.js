@@ -1,5 +1,4 @@
 function addWord(){
-var word = document.getElementById("input_text").value;
-document.getElementById("input-word").innerHTML = "You just wrote "+ word + " in the input!";
-console.log("boop");
+var userText = document.getElementById("words").value;
+document.getElementById("update").innerHTML = "You just wrote "+ userText + " in the input!";
 }

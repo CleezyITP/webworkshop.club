@@ -41,9 +41,9 @@
             then to refer by name to retrieve that information.
         </p>
         <p>You can write a variable in javascript like this</p>
-        <pre><code>var backPack="banana"; </code></pre>
+        <pre><code>var backpack="banana"; </code></pre>
         <p>
-            Here, backPack is the identifier. The equal sign is the assignment
+            Here, backpack is the identifier. The equal sign is the assignment
             operator and it assigns the identifier information (in this case,
             the word "banana").
         </p>
@@ -52,7 +52,7 @@
         <h4>Variable Assignment</h4>
         <p>
             Variables can be text values (referred to as strings), or numbers.
-            Strings are always inside single or double quotes.
+            Strings are always inside single or double quotes. There are different ways of writing variable (In documentation you will encounter variable names let and const, as well. We will use var, because it is straightforward, and the w3school uses it). 
         </p>
         <pre>
 var pi = 3.14;
@@ -71,15 +71,28 @@ var userMessage = &#34;Message received!&#34;;
 function myFunction() {
 }</code></pre>
 
-        <h3>Methods</h3>
+<h3>Events</h3>
         <p>
-            When an HTML document is loaded into a web browser, it becomes a
-            document object, with as many nodes, or branches, as you have
-            elements. Javascript has built in Methods for summoning and returning specific parts of your document object.
+            An HTML event can be something the browser does, or something a user
+            does. We will be focusing on user actions. Specifically, what
+            happens when a user selects a button. In order to call or invoke our
+            function on a button event, we can add the attribute onclick to our
+            button element.
+        </p>
+
+        <pre>&#x3C;button onclick=&#34;myFunction()&#34;>submit&#x3C;/button></pre>
+<h2>Accessing parts of a webpage</h2>
+        <p>
+            To change parts of a webpage, javascript has a way to talk to the
+            elements in html. Think of it as javascript giving the webpage a shoulder tap and asking it to change something. You can change the content of any attribute or element in a page including text and styles. 
         </p>
         <p>
-            The getElementById() method returns an element with a specified ID. The following example uses this
-            method to return the element with an id="demo".
+            When an HTML document is loaded into a web browser, it becomes a
+            document object, which is a tree structure with as many nodes, or branches, as you have nested elements. Javascript has built in Methods for summoning and returning specific parts of your document object.
+        </p>
+        <p>
+            In Javascript, when you type the word &apos;document&apos;, you are starting a series of instructions to summon parts of the document object. The getElementById() method is very direct, and returns an element with a specified ID. The following example uses this
+            method to return the element with an id="demo," and changes the elements text.
         </p>
         <pre>
 HTML:    
@@ -101,27 +114,8 @@ function myFunction() {
             field.
         </p>
 
-        <h3>Events</h3>
-        <p>
-            An HTML event can be something the browser does, or something a user
-            does. We will be focusing on user actions. Specifically, what
-            happend when a user selects a button. In order to call or invoke our
-            function on a button event, we can add the attribute onclick to our
-            button element.
-        </p>
-
-        <pre>&#x3C;button onclick=&#34;myFunction()&#34;>submit&#x3C;/button></pre>
-
-        <h2>Accessing parts of a webpage</h2>
-        <p>
-            To change parts of a webpage, javascript has a way to talk to the
-            elements in html. It can address elements by calling their name from
-            a hierarchy that outlines the page's html elements (element type, or
-            class), or more directly, through an id attribute. Think of it as
-            javascript giving the webpage a shoulder tap and asking it to change
-            something. You can change the content of any attribute or element in
-            a page including text and styles. Let's pull together these concepts into some examples.
-        </p>
-        <a href="Javascript_Example_1/index.html">Javascript example 1</a>
+    <p>Let's pull together these concepts into some examples.</p>    
+        <a href="Javascript_Example_1/index.html">Next: Javascript example 1</a><br>
+        <a href="../aria.html">Previous: Aria-live regions</a>
     </body>
 </html>

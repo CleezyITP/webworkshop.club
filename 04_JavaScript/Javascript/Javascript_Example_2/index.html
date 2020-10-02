@@ -16,57 +16,60 @@
       >Enter a word into the edit field and use the submit button. Once you
       submit, your word will be added to the page!</p
     >
-    <label id="inputlabel" for="value">Type anything here</label>
+    <label id="inputlabel" for="words">Type anything here</label>
 
     <input
-      id="input_text"
       type="text"
+      id="words"
       name="words"
-      aria-labelledby="inputlabel input_text"
     />
 
     <button
       type="button"
-      name="submit"
-      value="Submit"
-      class="input-submit"
       onclick="addWord()"
     >
       Submit
     </button>
-
-    <p aria-live="assertive" id="input-word">Waiting for your input</p>
+<br>
+<br>
+    <span aria-live="assertive" id="update">Waiting for your input...</span>
 
     <h2>HTML:</h2>
     <pre>
 &lt;html>
   &lt;head>
-    &lt;title> Javascript Example 2: Adding a word to your page &lt;/title>
+    &lt;title>Example 2&lt;/title>
     &lt;script src=&#34;script.js&#34;>&lt;/script>
     &lt;link rel="stylesheet" type="text/css" href="style.css">
   &lt;/head>
   &lt;body> 
-    &lt;h1> Javascript Example 2 &lt;/h1>
-    &lt;p> Enter a word into the edit field and use the submit button. Once you submit, your word will be added to the page! &lt;/p>
-    &lt;label id=&#34;inputlabel&#34; for=&#34;value&#34;> Type anything here &lt;/label>   
-    &lt;input id=&#34;input_text&#34; type=&#34;text&#34; name=&#34;words&#34; aria-labelledby=&#34;inputlabel&#34;>
-    &lt;button type=&#34;button&#34; name=&#34;submit&#34; value=&#34;Submit&#34; class=&#34;input-submit&#34; onclick=&#34;addWord()&#34;>Submit&lt;/button>
-    &lt;p aria-live=&#34;assertive&#34; id=&#34;input-word&#34;> Waiting for your input &lt;/p>
+    &lt;h1>Example 2: Adding words to your page&lt;/h1>
+    &lt;label for=&#34;words&#34;> Type anything here &lt;/label>   
+    &lt;input type=&#34;text&#34; id=&#34;words&#34;  name=&#34;words&#34;>
+    &lt;button type=&#34;button&#34; onclick=&#34;addWords()&#34;>Submit&lt;/button>
+    &lt;p aria-live=&#34;assertive&#34; id=&#34;update&#34;> Waiting for your input...&lt;/p>
   &lt;/body>
 &lt;/html>
-</pre
-    >
+</pre>
 
     <h2>Javascript:</h2>
 
     <pre>
-function addWord(){
-    var word = document.getElementById(&#34;input_text&#34;).value;
-    document.getElementById(&#34;input-word&#34;).innerHTML = &#34;You just wrote &#34;+ word + &#34; in the input!&#34;;
-    console.log("I am working!");
+function addWords(){
+    var userText = document.getElementById(&#34;words&#34;).value; //comment: .value returns the string entered into the input
+    document.getElementById(&#34;update&#34;).innerHTML = &#34;You just wrote&#34;+ userText + &#34;in the input!&#34;; //you can combine strings (in quotes) and variables (no quotes) with plus signs
 }
     </pre>
+
+
+<p>Next steps: You can use span elements to update specific parts of a paragraph. For example:</p>
+  <pre>
+  &lt;p>My mother has &lt;span id="updateColor">blue&lt;/span> eyes.&lt;/p>
+  </pre>
+
+<p>Once you have a handle on example 2, can you create more text inputs that are used to update span elements in a paragraph in order to create a mad lib?</p>     
     <p><a href="../../Glossary.html">HTML Element Glossary</a></p>
     <p><a href="../../../Resources.html">Next: Resources</a></p>
+
   </body>
 </html>

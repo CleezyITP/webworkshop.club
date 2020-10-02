@@ -17,29 +17,17 @@
 
     <h1>Javascript Example 1: Change background color</h1>
     
-    <p class='white'> There are three buttons on this page. When you select one it will change the background color and let you know about it. </p>
+    <p class='white'> When you select the button it will change the background color and let you know about it. </p>
 
-     <p class='white' aria-live="assertive" id="color">The background of this page is white</p>
 
-    <button type="button" onclick="red()">change background color to red</button>
-    <button type="button" onclick="green()">change background color to green</button>
-    <button type="button" onclick="blue()">change background color to blue</button>
-
+    <button type="button" onclick="yellow()">change background to yellow</button>
+    <p class='white' aria-live="assertive" id="color">The background of this page is white</p>
 
     <script>
-        function red() {
-            document.body.style.backgroundColor = "red";
-            document.getElementById("color").innerHTML = "The background is red now!";
-        }
-
-        function green() {
-            document.body.style.backgroundColor = "green";
-            document.getElementById("color").innerHTML = "The background is green now!";
-
-        }
-
-        function blue() {
-            document.body.style.backgroundColor = "blue";
+        function yellow() {
+            
+            
+            document.body.style.backgroundColor = "yellow";
             // let l =document.querySelectorAll('body');
             // //var x =document.getElementsByClassName('white');
             // y=l.length;
@@ -47,7 +35,7 @@
             //     console.log("pookie");
             //     l[i].style.color='white';
             // }
-            document.getElementById("color").innerHTML = "The background is blue!";
+            document.getElementById("color").innerHTML = "The background is yellow now!";
         }
 
     </script>
@@ -61,11 +49,9 @@
         &#x3C;title&#x3E; Javascript example &#x3C;/title&#x3E;
     &#x3C;/head&#x3E;
     &#x3C;body&#x3E;
-        &#x3C;h1&#x3E; Button color changer example &#x3C;/h1&#x3E;
-        &#x3C;button type="button" onclick=&#x22;red()&#x22;> change background color to red &#x3C;/button&#x3E;
-        &#x3C;button type="button" onclick=&#x22;green()&#x22;> change background color to green &#x3C;/button&#x3E;
-        &#x3C;button type="button" onclick=&#x22;blue()&#x22;>change background color to blue &#x3C;/button&#x3E;
-        &#x3C;p aria-live=&#x22;assertive&#x22; id=&#x22;color&#x22;&#x3E; background is now white &#x3C;/p&#x3E;
+        &#x3C;h1&#x3E; Javascript Example 1: Change background color &#x3C;/h1&#x3E;
+        &#x3C;button type="button" onclick=&#x22;yellow()&#x22;> change background to yellow &#x3C;/button&#x3E;
+        &#x3C;p aria-live=&#x22;assertive&#x22; id=&#x22;color&#x22;&#x3E; The background of this page is white &#x3C;/p&#x3E;
     &#x3C;/body&#x3E;
 &#x3C;/html&#x3E;
 </code>
@@ -74,17 +60,10 @@
 <pre>
 <code>
 
-function red() {
-    document.body.style.backgroundColor = &#x22;red&#x22; ;
-    document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now red!&#x22; ;
-}
-function green() {
-    document.body.style.backgroundColor = &#x22;green&#x22; ;
-    document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now green!&#x22; ;
-}
-function blue() {
-    document.body.style.backgroundColor = &#x22;blue&#x22; ;
-    document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now blue!&#x22; ;
+function yellow() {
+    document.body.style.backgroundColor = &#x22;yellow&#x22; ;
+    document.getElementById(&#x22;color&#x22;).innerHTML = &#x22;background is now yellow!&#x22; ;
+    
 }
 
 
@@ -93,7 +72,8 @@ function blue() {
     </code></pre>
 
     <p>
-    <a href="../Javascript_Example_2/index.html">Javascript example 2</a>
+    <a href="../Javascript_Example_2/index.html">Next: Javascript example 2</a><br>
+    <a href="../01_introduction_to_js.html">Previous: Javascript Basics</a><br>
 </p>
 </body>
 </html>
