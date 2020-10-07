@@ -15,8 +15,20 @@
 
     <ol>
         <li>Check for spelling and syntax errors - Line by line, character by character  (errors are often a missing characters)</li>
-        <li></li>
-        <li></li>
+        <li>Rubber Ducking method:</li>
+        <li>Enter the following code into the beginning of your script:
+            <pre>
+window.onerror = showerror;
+function showerror(msg, url, line, column, rerr){
+ alert('Error: ' + msg + ' Line: ' + line + ' character: ' + column + ' url ' + url + ' ' + rerr);
+ window.onerror=null;  
+ return true;  
+}
+            </pre>
+
+         It should run once your javascript is called (eg after a button press), and detect errors one at a time.
+
+        </li>
 
     </ol>
 
