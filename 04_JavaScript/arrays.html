@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>Arrays and For Loops</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <!-- this is a comment -->
+
+    <body>
+        <a href="../index.html">JavaScript Home</a>
+        <h1>Javascript Arrays and Looping</h1>
+
+        <h2>Variable Review</h2>
+        <p>
+            A variable is something you define in your program that can store a
+            number or word that can change over time. Think of it like a
+            backpack. You might have a computer in your backpack, but you can
+            change the contents whenever you like. Variables are used by
+            programmers to store and change information.
+        </p>
+
+        <p>You can write a variable in javascript like this</p>
+        <pre><code>var backpack="banana"; </code></pre>
+        <p>
+            Here, backpack is the identifier. The equal sign is the assignment
+            operator and it assigns the identifier information (in this case,
+            the word "banana").
+        </p>
+        <p></p>
+
+        <h4>Variable Assignment</h4>
+        <p>
+            Variables can be text values (referred to as strings), or numbers.
+            Strings are always inside single or double quotes. There are different ways of writing variable (In documentation you will encounter variable names let and const, as well. We will use var, because it is straightforward, and the w3school uses it). 
+        </p>
+<pre>
+var pi = 3.14;
+var userMessage = &#34;Message received!&#34;;
+</pre>
+
+    <h4>Variable Arithmetic</h4>
+    <p>You can use arithmetic operators to increment, decrement, multiply, add, subtract, divide variables with number values - and to manipulate strings like we used in the previous lesson (concatenation of a string and variable). You can use the javascript script tags &#60;script>&#60;/script>in your html document body to run these tests:</p>
+
+<h5>Variable Arithmetic Examples</h5>
+
+HTML: 
+<pre>
+
+&#60;p id=&#34;demo&#34;>&#60;/p>
+&#60;h2>Subtracting variables &#60;/h2>
+&#60;p id=&#34;demo2&#34;>&#60;/p>
+&#60;h2>Expressions &#60;/h2>
+&#60;p id=&#34;demo3&#34;>&#60;/p>
+
+&#60;script>
+var w = 1    
+var x = 2 + 1;
+var y = x - w;
+var z = (5+5) * x
+document.getElementById(&#34;demo&#34;).innerHTML = x;
+document.getElementById(&#34;demo2&#34;).innerHTML = y;
+document.getElementById(&#34;demo3&#34;).innerHTML = z;
+&#60;/script>
+</pre>    
+
+<h6>Adding numbers: var x = 2 + 1</h6>
+<span id='demo'></span>
+<h6>Subtracting variables: var y = x - w</h6>
+<span id='demo2'></span>
+<h6>Expressions: var z = (5+5) * x</h6>
+<span id='demo3'></span>
+
+<script>
+var w = 1    
+var x = 2 + 1;
+var y = x - w;
+var z = (5+5) * x
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo2").innerHTML = y;
+document.getElementById("demo3").innerHTML = z;
+</script>
+
+<p>The increment operator (++) increments numbers, and the decrement operator (--) decrements numbers. You will often see these operators in functions that count user interactions.</p>
+
+<pre>
+var x = 5;
+x++;
+var z = x; 
+</pre>
+
+<p>In this case, z will equal to 6, and increment by in each time x++ is called.</p> 
+
+
+
+<p>More on <a href="https://www.w3schools.com/js/js_arithmetic.asp">Javascript arithmetic at W3schools</a></p>
+
+<h2>Arrays</h2>
+<p>Arrays are a type of data structure that allow you to store or index multiple items and call upon them later.</p>
+
+<pre>var fruits = ["Banana", "Orange", "Apple", "Mango"];</pre>
+
+<p> To test out different array concepts, lets imagine you have some test paragraphs in an html file:
+<pre>
+
+&#60;p id=&#34;arrayDemo&#34;>&#60;/p>
+&#60;p id=&#34;arrayDemo2&#34;>&#60;/p>
+&#60;p id=&#34;arrayDemo3&#34;>&#60;/p>    
+</pre>
+</p>
+<p>You can access an array, by referring to the index number of the item you want. Note that index numbers always start at 0. For example, if I want to access my Banana, I would write: fruits[0]. If I want my Apple, I would write fruits[2]. Here's some Javascript code for my test</p>
+
+<pre>document.getElementById("arrayDemo").innerHTML = fruits[0];</pre>
+
+<p>If want my full array, I can write the following: 
+<pre>document.getElementById("arrayDemo2").innerHTML = fruits;</pre>
+This will give me the following in my HTML: Banana, Orange, Apple, Mango
+</p>
+<p> Now, because my array is a special kind of object, if I want to know how long my array is, I can use the length property to return the length of an array (the number of array elements). Note that the length property is always one more than the highest array index (because the index starts at 0).
+<pre>
+document.getElementById("arrayDemo3").innerHTML = fruits.length;  // the length of fruits is 4
+</pre>
+
+<h6>Index 0, or fruits[0]:</h6>
+<span id='arrayDemo'></span>
+<h6>Full array, or fruits: </h6>
+<span id='arrayDemo2'></span>
+<h6>Array length, or fruits.length: </h6>
+<span id='arrayDemo3'></span>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("arrayDemo").innerHTML = fruits[0];
+document.getElementById("arrayDemo2").innerHTML = fruits;
+document.getElementById("arrayDemo3").innerHTML = fruits.length;
+</script>
+
+
+<h3>Looping through Arrays (for loops)</h3>
+
+<p>The best way to loop through an array is using a for loop. And using arrays and for loops, we can dynamically create content on our pages using Javascript. In the following example, I'm going to make an unordered list by looping through my fruit array, and adding them for my html. Here is the HTML and Javascript:</p>
+
+<pre>
+&#60;p id=&#34;forloop&#34;>&#60;/p>
+
+&#60;script>
+var fruits = [&#34;Banana&#34;, &#34;Orange&#34;, &#34;Apple&#34;, &#34;Mango&#34;];
+var fLen = fruits.length;
+var i;
+var ul = &#34;&#60;ul>&#34;;
+
+for (i = 0; i < fLen; i++) {
+  ul += &#34;&#60;li>&#34; + fruits[i] + &#34;&#60;/li>&#34;; //note that the += assignment operator can also be used to add (concatenate) strings
+}
+
+ul + &#34;&#60;/ul>&#34;;
+
+document.getElementById(&#34;forloop&#34;).innerHTML = ul;
+&#60;/script>
+
+</pre>
+
+<p>The above example will produce the following list: </p>
+
+<p id="forloop"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var fLen = fruits.length;
+var i;
+var ul = "<ul>";
+
+for (i = 0; i < fLen; i++) {
+  ul += "<li>" + fruits[i] + "</li>";
+}
+
+ul += "</ul>";
+
+document.getElementById("forloop").innerHTML = ul;
+</script>
+    
+
+    <a href="FTP_Windows/01_ftp_basics.html">Next: FTP</a><br>
+    <a href="debugging.html">Previous: Debugging</a>
+
+
+<h2>Adding to previous examples</h2>
+
+<p>In our previous example, we changed the background color to yellow...Lets say we wanted to create an accessible color scheme that renders all of our content in a high contrast pallete. Changing the background color is easy because it is one item in our DOM object. If we want to change all of our paragraphs and headings too, we will call up an array of all the paragraphs in our DOM object, and loop through them to change them. Here is how we can do that: </p>
+
+<pre>
+&#60;button type=&#34;button&#34; onclick=&#34;black()&#34;>high contrast mode&#60;/button>
+&#60;h5 class=&#34;white&#34;>looping example&#60;/h5>
+&#60;p class=&#34;white&#34; id=&#34;message&#34; aria-live=&#34;assertive&#34; id="color">&#60;/p>
+
+    &#60;script>
+        function black() {
+            document.body.style.backgroundColor = &#34;black&#34;;
+            let l =document.querySelectorAll(&#34;body&#34;);
+            var x =document.getElementsByClassName(&#34;white&#34;);
+            y=l.length;
+            for (i=0; i< y;i++){
+           l[i].style.color=&#34;white&#34;;
+            }
+            document.getElementById(&#34;message&#34;).innerHTML = &#34;you are in high contrast mode!&#34;;
+        }
+
+    &#60;/script>
+
+</pre>
+
+
+<button type="button" onclick="black()">high contrast mode</button>
+<h5 class='white'>looping example</h5>
+<p class='white' id="message" aria-live="assertive" id="color"></p>
+
+    <script>
+        function black() {
+            
+            
+            document.body.style.backgroundColor = "black";
+            let l =document.querySelectorAll('body');
+            var x =document.getElementsByClassName('white');
+            y=l.length;
+            for (i=0; i<y;i++){
+           console.log("pookie");
+           l[i].style.color='white';
+            }
+            document.getElementById("message").innerHTML = "you are in high contrast mode!";
+        }
+
+    </script>
+
+
+<p>For a more in-depth look and training in JavaScript, please visit freecodecamp, and try out their course content! <a href='https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/'>Freecodecamp unit on Javascript</a></p>
+
+    </body>
+</html>

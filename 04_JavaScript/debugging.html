@@ -1,38 +1,81 @@
 <html>
+    <head>
+        <title>Debugging</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
 
-<head>
-    <title>Debugging</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
+    <body>
+        <!-- <style type="text/css">font-family: 'Helvetica', Helvetica, sans-serif;</style> -->
+        <a href="index.html">Javascript Home</a>
 
-<body>
-    <!-- <style type="text/css">font-family: 'Helvetica', Helvetica, sans-serif;</style> -->
-    <a href="index.html">Javascript Home</a>
-    
-    <h1>Debugging</h1>
+        <h1>Beginner&apos;s Guide to Debugging Javascript</h1>
 
-    <p>Debugging refers to different methods and tools for finding errors in your code... </p>
+        <p>
+            &quot;Debugging is the process of turning mysteries into
+            errors&quot; - Clay Shirky
+        </p>
 
-    <ol>
-        <li>Check for spelling and syntax errors - Line by line, character by character  (errors are often a missing characters)</li>
-        <li>Rubber Ducking method:</li>
-        <li>Enter the following code into the beginning of your script:
-            <pre>
+        <p>
+            Debugging refers to different methods and tools for checking your
+            assumptions and finding errors in your code. Here are a few
+            strategies that do not require use of advanced tools to help in the process.
+        </p>
+
+        <ol>
+            <li>
+                Always check for spelling and syntax errors. Do so carefully -
+                line by line, and character by character. I cannot stress how
+                easy it is to break your code with errors that are the product
+                of a missing character like a semi-colon.
+            </li>
+            <br />
+            <li>
+                Take a breath, or a break and work methodically. Examine your
+                code section by section, function by function. If you have not
+                already, add comments to your code (// in javascript), and
+                describe what each part is doing. If your code was working
+                before, and is now broken, reflect on what has most recently
+                changed and focus on this section.
+            </li>
+            <br />
+            <li>
+                If you are on your own, try the Rubber Ducking method.
+
+                <p>
+                    This technique requires you describe the parts of your code
+                    to a rubber duck, or other inanimate object. Many programmers
+                    have had the experience of explaining a problem to someone
+                    else, possibly even to someone who knows nothing about
+                    programming, and then hitting upon the solution in the
+                    process of explaining the problem. In describing what the
+                    code is supposed to do and observing what it actually does,
+                    any incongruity between these two becomes apparent. More generally, explaining a subject forces its evaluation from different perspectives and can provide a deeper
+                    understanding. By using an inanimate object, the programmer
+                    can try to accomplish this without the help of anyone else.
+                </p>
+            </li>
+            <li>
+                In addition to using the chrome developer tools (f12 and locating the console tab), you can bypass this unruly interface by adding the
+                following code into the beginning of your script to extract
+                developer tool error messages and turn them into an alert:
+                <pre>
 window.onerror = showerror;
 function showerror(msg, url, line, column, rerr){
  alert('Error: ' + msg + ' Line: ' + line + ' character: ' + column + ' url ' + url + ' ' + rerr);
  window.onerror=null;  
  return true;  
 }
-            </pre>
+            </pre
+                >
 
-         It should run once your javascript is called (eg after a button press), and detect errors one at a time.
-
-        </li>
-
-    </ol>
-
-    
-</body>
-
+                This script should run once your javascript is called (eg after
+                a button press), and detect errors one at a time. If you cannot
+                decipher what is happening from this error message, copy the
+                alert message, delete the line number information, and search it
+                online!
+            </li>
+        </ol>
+        <a href="arrays.html">Next: Arrays and For Loops</a><br>
+        <a href="Javascript/Javascript_Example_2/index.html">Previous: Javascript Example 2</a>
+    </body>
 </html>
