@@ -188,14 +188,12 @@ document.getElementById("forloop").innerHTML = ul;
 
 <pre>
 &#60;button type=&#34;button&#34; onclick=&#34;black()&#34;>high contrast mode&#60;/button>
-&#60;h5 class=&#34;white&#34;>looping example&#60;/h5>
-&#60;p class=&#34;white&#34; id=&#34;message&#34; aria-live=&#34;assertive&#34; id="color">&#60;/p>
+&#60;p id=&#34;message&#34; aria-live=&#34;assertive&#34; id="color">&#60;/p>
 
     &#60;script>
         function black() {
             document.body.style.backgroundColor = &#34;black&#34;;
-            let l =document.querySelectorAll(&#34;body&#34;);
-            var x =document.getElementsByClassName(&#34;white&#34;);
+            var l =document.querySelectorAll(&#34;body&#34;);
             y=l.length;
             for (i=0; i< y;i++){
            l[i].style.color=&#34;white&#34;;
@@ -209,20 +207,19 @@ document.getElementById("forloop").innerHTML = ul;
 
 
 <button type="button" onclick="black()">high contrast mode</button>
-<h5 class='white'>looping example</h5>
-<p class='white' id="message" aria-live="assertive" id="color"></p>
+<h5 >looping example</h5>
+<p id="message" aria-live="assertive" id="color"></p>
 
     <script>
         function black() {
             
             
             document.body.style.backgroundColor = "black";
-            let l =document.querySelectorAll('body');
-            var x =document.getElementsByClassName('white');
+            var l =document.querySelectorAll('body');
             y=l.length;
             for (i=0; i<y;i++){
-           console.log("pookie");
-           l[i].style.color='white';
+            l[i].style.color='white';
+
             }
             document.getElementById("message").innerHTML = "you are in high contrast mode!";
         }
